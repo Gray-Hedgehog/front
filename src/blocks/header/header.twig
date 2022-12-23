@@ -1,0 +1,77 @@
+<header>
+	<div class="container"> 
+		<div class="header__container">
+			
+				<div class="header__top">
+					<div class="header__information">
+						
+						<a class="header__information-link" href="#">
+							{% include 'assets/svg/location.svg' %}
+							Москва
+						</a>
+						<a class="header__information-link" href="#">
+							{% include 'assets/svg/delivery.svg' %}
+							Доставка и оплата
+						</a>
+						<a class="header__information-link" href="#">
+							{% include 'assets/svg/adress.svg' %}
+							Адрес и часы работы
+						</a>
+					</div>
+					<div class="header__contacts">
+						<a class="header_email" href="#" >
+							{% include 'assets/svg/email.svg' %}
+							market@estatut.ru
+						</a>
+						<a href="#" class="header__phone">
+							{% include 'assets/svg/phone.svg' %}
+							8 (968) 660-65-50
+							{% include 'assets/svg/i.svg' %}
+						</a>
+					</div>
+				</div>
+				<div class="header__middle">
+					<div class="header__middle-left">
+						{% include 'assets/svg/logo.svg' %}
+						<form action="#">
+							<input class="header__search" id="search" type="text" placeholder="Автор, название, ISBN">
+							<label for="search"></label>
+							<button class="header__search-btn">
+								{% include 'assets/svg/search.svg' %}
+								Искать
+							</button>
+						</form>
+					</div>
+					<div class="header__middle-right">
+						<a class="header_login" href="#">
+							{% include 'assets/svg/login.svg' %}
+							Отложено
+						</a>
+						<a class="header_postponed" href="#">
+							{% include 'assets/svg/postponed.svg' %}
+							Войти
+						</a>
+						<a class="header_basket" href="#">
+							{% include 'assets/svg/basket.svg' %}
+							Корзина
+						</a>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<a class="header__bottom-link" href="#">
+						{% include 'assets/svg/catalog.svg' %}
+						Каталог
+					</a>
+					<a class="header__bottom-link" href="#">Авторы</a>
+					<a class="header__bottom-link" href="#">Новинки</a>
+					<a class="header__bottom-link header__bottom-link--red" href="#">
+						{% include 'assets/svg/discounts.svg' %}
+						Скидки
+					</a>
+					<a class="header__bottom-link" href="#">Партнёрам</a>
+					<a class="header__bottom-link" href="#">Мы</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
