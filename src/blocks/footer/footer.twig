@@ -9,15 +9,15 @@
 
 						{% include 'assets/svg/logo.svg' %}
 						
-						<div class="footer__top-middle">
+						<form class="footer__top-middle" action="#">
 							<input class="footer__search" id="footerSearch" type="text" placeholder="Введите свой Email и получите скидку">
 							<label for="footerSearch"></label>
 							<button class="footer__search-btn">
 								{% include 'assets/svg/airplane.svg' %}
 							</button>
-						</div>
+						</form>
 
-						<div class="footer__top-right">
+						<div class="footer__socials">
 							<a href="#">
 								<div class="footer__facebook">
 									{% include 'assets/svg/facebook.svg' %}
@@ -46,31 +46,31 @@
 
 					<ul>
 						<li> <a class="footer__capture-link" href="#">Покупателям</a> </li>
-						<li> <a href="#">Наша почта</a> </li>
-						<li> <a href="#">Оплата и доставка</a> </li>
-						<li> <a href="#">Вопросы и ответы</a> </li>
+						<li> <a class="footer__link" href="#">Наша почта</a> </li>
+						<li> <a class="footer__link" href="#">Оплата и доставка</a> </li>
+						<li> <a class="footer__link" href="#">Вопросы и ответы</a> </li>
 					</ul>
 
 					<ul>
 						<li> <a class="footer__capture-link" href="#">Издательство</a> </li>
-						<li> <a href="#">О компании</a> </li>
-						<li> <a href="#">Авторам</a> </li>
-						<li> <a href="#">Вакансии</a> </li>
-						<li> <a href="#">Контакты</a> </li>
+						<li> <a class="footer__link" href="#">О компании</a> </li>
+						<li> <a class="footer__link" href="#">Авторам</a> </li>
+						<li> <a class="footer__link" href="#">Вакансии</a> </li>
+						<li> <a class="footer__link" href="#">Контакты</a> </li>
 					</ul>
 
 					<ul>
 						<li> <a class="footer__capture-link" href="#">Книги</a> </li>
-						<li> <a href="#">Все категории</a> </li>
-						<li> <a href="#">Бестселлеры</a> </li>
-						<li> <a href="#">Новинки</a> </li>
-						<li> <a href="#">Скидки и акции</a> </li>
+						<li> <a class="footer__link" href="#">Все категории</a> </li>
+						<li> <a class="footer__link" href="#">Бестселлеры</a> </li>
+						<li> <a class="footer__link" href="#">Новинки</a> </li>
+						<li> <a class="footer__link" href="#">Скидки и акции</a> </li>
 					</ul>
 
 					<ul>
 						<li> <a class="footer__capture-link" href="#">Прайс-лист</a> </li>
 						<li> 
-							<a href="#" download="">
+							<a class="footer__link"  href="#" download="">
 								{% include 'assets/svg/file.svg' %}
 								<div>
 									Скачать прайс-лист
@@ -83,13 +83,13 @@
 					<ul>
 						<li> <a class="footer__capture-link" href="#">Телефон и Email</a> </li>
 						<li>
-							<a href="#">
+							<a class="footer__email" href="#">
 								{% include 'assets/svg/email.svg' %}
 								<span>market@estatut.ru</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a class="footer__phone" href="#">
 								{% include 'assets/svg/phone.svg' %}
 								<span>8 (968) 660-65-50</span>
 							</a>
