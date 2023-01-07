@@ -44,52 +44,52 @@
 			<div class="footer__container">
 				<div class="footer__middle">
 
-					<ul>
-						<li> <a class="footer__capture-link" href="#">Покупателям</a> </li>
-						<li> <a class="footer__link" href="#">Наша почта</a> </li>
-						<li> <a class="footer__link" href="#">Оплата и доставка</a> </li>
-						<li> <a class="footer__link" href="#">Вопросы и ответы</a> </li>
+					<ul class="footer__buyers">
+						<li class="footer__title"> <a class="footer__title-link" href="#">Покупателям</a> </li>
+						<li class="footer__link--margin"> <a class="footer__link" href="#">Наша почта</a> </li>
+						<li class="footer__link--margin"> <a class="footer__link" href="#">Оплата и доставка</a> </li>
+						<li class="footer__link--margin"> <a class="footer__link" href="#">Вопросы и ответы</a> </li>
 					</ul>
 
-					<ul>
-						<li> <a class="footer__capture-link" href="#">Издательство</a> </li>
-						<li> <a class="footer__link" href="#">О компании</a> </li>
-						<li> <a class="footer__link" href="#">Авторам</a> </li>
-						<li> <a class="footer__link" href="#">Вакансии</a> </li>
-						<li> <a class="footer__link" href="#">Контакты</a> </li>
+					<ul class="footer__publishing">
+						<li class="footer__title"> <a class="footer__title-link" href="#">Издательство</a> </li>
+						<li class="footer__link--margin"> <a class="footer__link" href="#">О компании</a> </li>
+						<li class="footer__link--margin"> <a class="footer__link" href="#">Авторам</a> </li>
+						<li class="footer__link--margin"> <a class="footer__link" href="#">Вакансии</a> </li>
+						<li class="footer__link--margin"> <a class="footer__link" href="#">Контакты</a> </li>
 					</ul>
 
-					<ul>
-						<li> <a class="footer__capture-link" href="#">Книги</a> </li>
-						<li> <a class="footer__link" href="#">Все категории</a> </li>
-						<li> <a class="footer__link" href="#">Бестселлеры</a> </li>
-						<li> <a class="footer__link" href="#">Новинки</a> </li>
-						<li> <a class="footer__link" href="#">Скидки и акции</a> </li>
+					<ul class="footer__books">
+						<li class="footer__title"> <a class="footer__title-link" href="#">Книги</a> </li>
+						<li class="footer__link--margin"> <a class="footer__link" href="#">Все категории</a> </li>
+						<li class="footer__link--margin"> <a class="footer__link" href="#">Бестселлеры</a> </li>
+						<li class="footer__link--margin"> <a class="footer__link" href="#">Новинки</a> </li>
+						<li class="footer__link--margin"> <a class="footer__link" href="#">Скидки и акции</a> </li>
 					</ul>
 
-					<ul>
-						<li> <a class="footer__capture-link" href="#">Прайс-лист</a> </li>
+					<ul class="footer__price-list">
+						<li class="footer__title"> <a class="footer__title-link" href="#">Прайс-лист</a> </li>
 						<li> 
-							<a class="footer__link"  href="#" download="">
+							<a class="footer__link footer__link--download"  href="#" download>
 								{% include 'assets/svg/file.svg' %}
 								<div>
-									Скачать прайс-лист
+									<span>Скачать прайс-лист</span>	
 									<label>PDF, 12 Mb</label>
 								</div>  
 							</a> 
 						</li>
 					</ul>
 
-					<ul>
-						<li> <a class="footer__capture-link" href="#">Телефон и Email</a> </li>
+					<ul class="footer__contacts">
+						<li class="footer__title"> <a class="footer__title-link" href="#">Телефон и Email</a> </li>
 						<li>
-							<a class="footer__email" href="#">
+							<a class="footer__email footer__link--margin" href="#">
 								{% include 'assets/svg/email.svg' %}
 								<span>market@estatut.ru</span>
 							</a>
 						</li>
 						<li>
-							<a class="footer__phone" href="#">
+							<a class="footer__phone footer__link--margin" href="#">
 								{% include 'assets/svg/phone.svg' %}
 								<span>8 (968) 660-65-50</span>
 							</a>
@@ -100,7 +100,7 @@
 
 				<div class="footer__bottom">
 					<div class="footer__bottom-left">
-						© 2020 Издательство «Статут»
+						<a href="#">© 2020 Издательство «Статут»</a> 
 					</div>
 
 					<div class="footer__bottom-right">

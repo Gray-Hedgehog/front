@@ -92,13 +92,31 @@
 .footer__middle
 {
     display: flex;
+    padding:  44px 0 45px 0;
     height: 260px;
     border-bottom: 1px solid rgba(40, 47, 54, 0.15);
 
+    .footer__buyers{ margin: 0 71px 0 0; }
+
+    .footer__publishing{ margin: 0 108px 0 0; }
+
+    .footer__books { margin: 0 95px 0 0; }
+
+    .footer__price-list { margin: 0 30px 0 0; }
+
+    .footer__title{ margin: 0 0 19px 0;}
+
+    .footer__title-link
+    {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $ocean-blue-color;
+    }
 
     .footer__link
     {
-        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -111,15 +129,98 @@
             color: rgba(40, 47, 54, 0.5);
         }
     }
+    
+    .footer__link--margin{margin: 0 0 11px 0}
 
-    .footer__capture-link
+    .footer__link--download
     {
-        margin:  0 0 24px 0 ;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        color: $ocean-blue-color;
+        display: flex;
+        align-items: center;
+
+        div
+        {
+            margin: 3px 0 0 5px;
+        }
+        
+        span
+        {
+            display: block;
+            color: #282F36CC;
+        }
+
+        
+    }
+
+    .footer__email
+    {
+        display: flex;
+        margin: 0 0 0 2px;
+        padding: 3px 0 0 0;
+		align-items: center;
+		font-weight: 400;
+		font-size: 14px;	
+		line-height: 16px;
+		color: $ocean-blue-color-80;
+
+		span 
+		{
+			padding: 0 0 0 5px;
+		}
+    }
+
+    .footer__phone
+    {
+        display: flex;
+        margin: 10px 0 0 2px;
+        padding: 3px 0 0 0;
+		align-items: center;
+		font-weight: 400;
+		font-size: 14px;	
+		line-height: 16px;
+		color: $ocean-blue-color-80;
+
+		span 
+		{
+			padding: 0 0 0 6px;
+		}
+    }
+}
+
+
+.footer__bottom
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 45px 0;
+
+    .footer__bottom-left
+    {
+        a
+        {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $ocean-blue-color-50;
+        }
+        
+    }
+
+    .footer__bottom-right
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+
+        .footer__adress { margin: 0 0 0 12px; }
+        .footer__politics { margin: 0 0 0 40px; }
+        a
+        {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $ocean-blue-color-80; 
+        }
     }
 }
