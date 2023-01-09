@@ -2,14 +2,10 @@
 
 {% block page %}
 	<div class="container">
-		<p>В самом начале - расписываем все компоненты, придумываем названия</p>
-		<p>Пример подключения картинки</p>
-		<picture>
-			<source srcset="img/logo.webp" type="image/webp">
-			<img src="img/logo.png" alt="Logo" width="57px">
-		</picture>
 
-		{% include 'blocks/book/book.twig' with {
+		{% include 'blocks/contentTop/contentTop.twig' %}
+
+		{# {% include 'blocks/book/book.twig' with {
 			'bookTitle': 'Книга дня', 
 			'bookTime': '08:56:31',
 			'bookPicture': '/img/OlegRoy.jpg',
@@ -17,7 +13,7 @@
 			'bookName': 'Инвестирование: способы, риски, субъекты : монография',
 			'bookAuthor': 'Майфат А.В.',
 			'bookPrice': '4 450 ₽'
-		} %}
+		} %} #}
 	</div>
 	
 

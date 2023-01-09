@@ -2,13 +2,14 @@
 {
     position: relative;
     padding: 22px 20px 26px 20px;
-    width: 360px;
-    height: 520px;
+    // width: 360px;
+    // height: 520px;
     background: #FFFFFF;
     border-radius: 5px;
 
     .book__title
     {
+        margin: 0 0 23px 0;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -33,10 +34,10 @@
         color: #FF7A00;
     }
 
-    .book__picture
+    .book__img
     {
         display: flex;
-        margin: 23px auto 0 auto;
+        margin: 0 auto;
     }
 
     .book__chapter
