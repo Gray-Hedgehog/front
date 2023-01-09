@@ -1,22 +1,9 @@
 .header__wrapper
 {
-	display: flex;
-	// margin: 0 115px 0 117px;
-	// margin: 0 auto;
-	// max-width: 1446px;
+	// display: flex;
 	width: 100%;
 	background-color: white;
 	border-bottom: 1px solid $platinum-color;
-}
-
-.header__container
-{	
-	display: flex;
-	flex-direction: column;
-	margin: 0 110px 0 117px;
-    width: 1140px;
-	// max-width: 1466px;
-	
 }
 
 .header__top
@@ -51,17 +38,17 @@
 
 		&:nth-child(2)
 		{
-			margin: 0 0 0 33px;
+			margin: 0 0 0 32px;
 		}
 
 		&:nth-child(2) span
 		{
-			padding: 0 0 0 7px;
+			padding: 0 0 0 5px;
 		}
 
 		&:nth-child(3)
 		{
-			margin: 0 0 0 33px;
+			margin: 0 0 0 30px;
 		}
 
 		&:nth-child(3) span
@@ -117,7 +104,7 @@
 	display: flex;
 	flex: 0 1 auto;
 	justify-content: space-between;
-	margin: 21px 0 0 0 ;
+	margin: 20px 0 0 0 ;
 }
 
 .header__middle-left
@@ -134,7 +121,7 @@
 
 		.header__search
 		{
-			padding: 0 0 0 15px;
+			padding: 0 0 0 13px;
 			margin-left: 10px;
 			width: 450px;
 			height:  40px;
@@ -157,6 +144,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			padding: 0 0 0 0 ;
 			width: 123px;
 			height: 40px;
 			border: none;
@@ -167,6 +155,11 @@
 			line-height: 20px;
 			color: $white-color;
 			background: $dark-amber-color;
+
+			span
+			{
+				padding: 0 0 0 6px ;
+			}
 		}
 
 	}	
@@ -178,7 +171,7 @@
 {
 	display: flex;
 	flex: 0 0 auto;
-	margin: 0 0 3px 0;
+	margin: 10px 0 0 0;
 	a 
 	{
 		font-style: normal;
@@ -191,23 +184,23 @@
 	.header__postponed
 	{
 		display: flex;
-		align-items: center;
+		// align-items: center;
 
 		span 
 		{
-			padding:  0 0 0 7px;
+			padding:  0 0 0 5px;
 		}
 	}
 
 	.header__login
 	{
 		display: flex;
-		align-items: center;
-		margin: 0 0 0 27px;
+		// align-items: center;
+		margin: 0 0 0 30px;
 
 		span 
 		{
-			padding:  0 0 0 6px;
+			padding:  0 0 0 5px;
 		}
 	}
 
@@ -215,15 +208,15 @@
 	{
 		position: relative;
 		display: flex;
-		align-items: center;
-		margin: 0 0 0 32px;
+		// align-items: center;
+		margin: 0 0 0 29px;
 
 
 		.header__numbers-of-items
 		{
 			position: absolute;
-			top: 5px;
-			left: 11px;
+			top: -8px;
+			left: 13px;
 
 			padding: 3px 0 0 2px;
 			height: 15px;
@@ -241,7 +234,7 @@
 
 		span 
 		{
-			padding:  0 0 0 7px;
+			padding:  0 0 0 6px;
 		}
 	}
 	
@@ -250,7 +243,7 @@
 .header__bottom
 {
 	display: flex;
-	margin: 20px 0 0 0;
+	margin: 12px 0 12px 0;
 
 	.header__bottom-link
 	{
@@ -270,14 +263,19 @@
 			margin: 0 0 0 7px;
 		}
 
+		&:nth-child(3) 
+		{
+			margin: 0 17px 0 0;
+		}
+
 		&:nth-child(4) 
 		{
-			margin: 0 25px 0 7px;
+			margin: 0 23px 0 8px;
 		}
 
 		&:nth-child(4) span 
 		{
-			margin: 0 0 0 7px;
+			margin: 0 0 0 6px;
 		}
 
 		.header__bottom-link--red
