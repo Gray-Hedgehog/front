@@ -45,7 +45,13 @@
 			<div class="header__middle">
 
 				<div class="header__middle-left">
+					
+					<button class="header__burger-btn">
+						{% include 'assets/svg/catalog.svg' %}
+					</button>
+
 					<a href="#">{% include 'assets/svg/logo.svg' %}</a>
+
 					<form class="header__form" action="#">
 						<input class="header__search" id="search" type="text" placeholder="Автор, название, ISBN">
 						<label for="search"></label>
@@ -54,6 +60,7 @@
 							<span>Искать</span>
 						</button>
 					</form>
+
 				</div>
 
 				<div class="header__middle-right">
