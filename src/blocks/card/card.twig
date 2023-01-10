@@ -1,9 +1,18 @@
-<div class="card">
-    <p class="card__text">
-        <div class="card__vector-orange">
-            {% include '/assets/svg/vector-orange.svg' %}
+<div class="card {{cardClassModificator}}">
+    
+    <span class="card__text">
+        <div class="card__vector">
+        {% include '/assets/svg/' ~ cardVectorName ~ '.svg' %}
         </div>
-        Бесплатно доставим ваш заказ при покупке от 2000 ₽
-    </p>
-    {% include '/assets/svg/deliveryman.svg' %}
+        {{cardText}}
+    </span>
+
+    <div class="card__picture">
+        {% include "/assets/svg/" ~ cardPictureName ~ ".svg" %}
+    </div>
+    
 </div>
+
+{# {% include '/assets/svg/vector-orange.svg' %}
+
+{% include '/assets/svg/deliveryman.svg' %} #}

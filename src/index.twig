@@ -4,7 +4,21 @@
 	<div class="container">
 
 		{% include 'blocks/contentTop/contentTop.twig' %}
-		{% include 'blocks/card/card.twig' %}
+		{# {% include 'blocks/card/card.twig' with { 
+							'cardClassModificator': 'card--delivery',
+							'cardVectorName': 'vector-orange',
+							'cardText': 'Бесплатно доставим ваш заказ при покупке от 2000 ₽',
+							'cardPictureName': 'deliveryman' 
+							} %} #}
+
+		{# {% include 'blocks/card/card.twig' with { 
+							'cardClassModificator': 'card--customer',
+							'cardVectorName': 'vector-blue',
+							'cardText': 'Скидка<br>
+										 при регистрации<br>
+										 до 15%',
+							'cardPictureName': 'customer' 
+							} %} #}
 
 		{# {% include 'blocks/book/book.twig' with {
 			'bookTitle': 'Книга дня', 
