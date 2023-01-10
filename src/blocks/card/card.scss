@@ -3,9 +3,9 @@
     position: relative;
 
     display: flex;
-    padding: 34px 136px 31px 25px;
+    padding: 34px 136px 31px 20px;
     // width: 360px;
-    // height: 140px;
+    height: 100%;
     border-radius: 5px;
     
     
@@ -27,7 +27,7 @@
     {
         position: absolute;
         top: 19px;
-        right: 25px;
+        right: 22px;
     }
 
     &--delivery
@@ -54,14 +54,28 @@
         .card__vector
         {
             position: absolute;
-            top: 48px;
-            left: 24px;
+            top: 50px;
+            left: 20px;
             z-index: -1;
         }
 
         .card__text
         {
             color: $ocean-blue-color-80; 
+        }
+    }
+
+    @include mq ($tablet)
+    {
+        & 
+        {
+            padding: 34px 136px 31px 25px;
+        }
+
+        .card__picture
+        {
+            top: 19px;
+            right: 25px;
         }
     }
 }

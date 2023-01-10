@@ -2,14 +2,22 @@
 {
     display: grid;
     margin: 50px 0 0 0;
-    grid-template-columns: repeat(3, 360px) ;
-    grid-template-rows: 350px 140px;
-    grid-template-areas: "slider slider book"
-                         "card1  card2  book" ;
-    grid-gap: 30px;
+    // grid-template-columns: 355px ;
+    grid-template-rows: 1fr 464px 140px 140px;
+    grid-template-areas: "slider"
+                         "book"
+                         "card1" 
+                         "card2";
+    grid-gap: 9px;
+
     .contentTop__slider
     {
         grid-area: slider;
+
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/0.5;
+
         background: #CCFF90;
     }
 
@@ -18,4 +26,25 @@
     .contentTop__card1 { grid-area: card1; }
 
     .contentTop__card2 { grid-area: card2; }
+
+    @include mq($tablet)
+    {
+        margin: 50px 0 0 0;
+        grid-template-columns: repeat(3, 360px) ;
+        grid-template-rows: 350px 140px;
+        grid-template-areas: "slider slider book"
+                             "card1  card2  book" ;
+        grid-gap: 30px;
+    }
 }
+
+// @include mq($tablet, $widescreen)
+// {
+//     grid-template-columns: 355px ;
+//     grid-template-rows: 175px 355px 140px 140px;
+//     grid-template-areas: "slider"
+//                          "book"
+//                          "card1" 
+//                          "card2";
+//     grid-gap: 0;
+// }
