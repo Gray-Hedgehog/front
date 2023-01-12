@@ -73,7 +73,12 @@
 	{
 		display: flex;
 		flex: 0 0 auto;
-		margin: 0 0 0 15px;
+		margin: 10px 0 0 0;
+
+		// @media (max-width: 1044px)
+		// {
+		// 	margin: 0 0 0 0;
+		// }
 	
 		.header__email
 		{
@@ -119,7 +124,8 @@
 	
 	@include mq($tablet)
 	{
-		& {	background-color: inherit; }
+		background-color: inherit;	
+		border-bottom: none;
 	}
 }
 
@@ -315,7 +321,7 @@
 		{
 			display: none;
 			// align-items: center;
-		
+			margin: 0 0 0 10px;
 			span 
 			{
 				padding:  0 0 0 5px;
