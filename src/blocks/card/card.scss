@@ -8,6 +8,19 @@
     height: 100%;
     border-radius: 5px;
     
+    @include mq ($tablet)
+    {
+        & 
+        {
+            padding: 34px 136px 31px 25px;
+        }
+
+        .card__picture
+        {
+            top: 19px;
+            right: 25px;
+        }
+    }
     
     .card__text
     {
@@ -65,19 +78,6 @@
         }
     }
 
-    @include mq ($tablet)
-    {
-        & 
-        {
-            padding: 34px 136px 31px 25px;
-        }
-
-        .card__picture
-        {
-            top: 19px;
-            right: 25px;
-        }
-    }
 }
 
 // .card--delivery

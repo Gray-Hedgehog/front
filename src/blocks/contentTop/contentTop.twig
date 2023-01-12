@@ -15,11 +15,22 @@
 		{% include 'blocks/card/card.twig' with { 
 							'cardClassModificator': 'card--delivery',
 							'cardVectorName': 'vector-orange',
-							'cardText': 'Бесплатно доставим ваш заказ при покупке от 2000 ₽',
+							'cardText': 'Бесплатно доставим<br>
+										ваш заказ при<br>
+										покупке от 2000 ₽',
 							'cardPictureName': 'deliveryman' 
 							} %}
+
+		{% include 'blocks/card/card.twig' with { 
+								'cardClassModificator': 'card--customer',
+								'cardVectorName': 'vector-blue',
+								'cardText': 'Скидка<br>
+											 при регистрации<br>
+											 до 15%',
+								'cardPictureName': 'customer' 
+								} %}
 	</div>
-    <div class="contentTop__card2">
+    <!-- <div class="contentTop__card2">
 		{% include 'blocks/card/card.twig' with { 
 							'cardClassModificator': 'card--customer',
 							'cardVectorName': 'vector-blue',
@@ -28,5 +39,5 @@
 										 до 15%',
 							'cardPictureName': 'customer' 
 							} %}
-	</div>
+	</div> -->
 </div>

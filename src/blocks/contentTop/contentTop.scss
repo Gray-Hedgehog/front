@@ -13,10 +13,10 @@
     @include mq($tablet)
     {
         margin: 50px 0 0 0;
-        grid-template-columns: repeat(3, 360px) ;
-        grid-template-rows: 350px 140px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 350px 1fr;
         grid-template-areas: "slider slider book"
-                             "card1  card2  book" ;
+                             "card1  card1  book" ;
         grid-gap: 30px;
     }
 
@@ -29,13 +29,36 @@
         aspect-ratio: 1/0.5;
 
         background: #CCFF90;
+
+        @media (max-width: 1044px)
+        {
+            // aspect-ratio: 1/1;
+        }
+
+        
     }
 
     .contentTop__book { grid-area: book; }
 
-    .contentTop__card1 { grid-area: card1; }
+    .contentTop__card1 
+    { 
+        grid-area: card1; 
 
-    .contentTop__card2 { grid-area: card2; }
+        display: grid;
+        grid-template-columns: 360px 360px;
+        grid-template-rows: 140px;
+        grid-gap: 30px;
+
+        @media (max-width: 1044px)
+        {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 30px;
+        }
+
+    }
+
+    // .contentTop__card2 { grid-area: card2; }
 
 }
 
