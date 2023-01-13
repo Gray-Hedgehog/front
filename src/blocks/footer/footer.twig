@@ -45,6 +45,8 @@
 							</div>
 						</a>
 					</div>
+
+					<div class="footer__top-middle footer__top-middle--order"></div>
 					
 				</div>
 				
@@ -61,6 +63,8 @@
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Вопросы и ответы</a> </li>
 				</ul>
 
+				<div class="footer__line"></div>
+
 				<ul class="footer__publishing">
 					<li class="footer__title"> <a class="footer__title-link" href="#">Издательство</a> </li>
 					<li class="footer__link--margin"> <a class="footer__link" href="#">О компании</a> </li>
@@ -69,6 +73,8 @@
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Контакты</a> </li>
 				</ul>
 
+				<div class="footer__line"></div>
+
 				<ul class="footer__books">
 					<li class="footer__title"> <a class="footer__title-link" href="#">Книги</a> </li>
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Все категории</a> </li>
@@ -76,6 +82,8 @@
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Новинки</a> </li>
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Скидки и акции</a> </li>
 				</ul>
+
+				<div class="footer__line"></div>
 
 				<ul class="footer__price-list">
 					<li class="footer__title"> <a class="footer__title-link" href="#">Прайс-лист</a> </li>
@@ -108,17 +116,46 @@
 
 			</div>
 
-			{# <div class="footer__bottom">
+			<div class="footer__bottom">
 					<div class="footer__bottom-left">
+						<div class="footer__bottom-line"></div>
 						<a href="#">© 2020 Издательство «Статут»</a> 
 					</div>
 
+					 
+
 					<div class="footer__bottom-right">
-						<a class="footer__adress" href="#">ул. Лобачевского, 92, корп. 2 119454, г. Москва</a>
+						<div class="footer__bottom-line footer__bottom-line--order1"></div>
+						<div class="footer__bottom-line footer__bottom-line--order4"></div>
+						<div class="footer__bottom-line footer__bottom-line--order6"></div>
+						<div class="footer__bottom-line footer__bottom-line--order8"></div>
+						
+
+						<a class="footer__adress" href="#">
+							<div class="footer__adress-icon">
+								{% include 'assets/svg/location.svg' %}
+							</div>
+							<span>ул. Лобачевского, 92, корп. 2 119454, г. Москва</span>
+							
+						</a>
+					
+						<a class="footer__bottom-phone" href="#">
+							{% include 'assets/svg/phone.svg' %}
+							<span>8 (968) 660-65-50</span>
+							{% include 'assets/svg/i.svg' %}
+						</a>
+
+						<a class="footer__bottom-email " href="#">
+							{% include 'assets/svg/email.svg' %}
+							<span>market@estatut.ru</span>
+						</a>
+	
 						<a class="footer__politics" href="#">Политика конфиденциальности</a>
+
 						<a class="footer__offer" href="#">Договор оферты</a>
+
 					</div>
-			</div> #}
+			</div>
 
 		</div>		
 

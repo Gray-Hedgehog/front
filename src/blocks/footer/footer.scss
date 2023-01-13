@@ -121,6 +121,8 @@
         {
             display: none;
         }
+
+        &--order{ order: 4;}
     }
     // border-top: 1px solid rgba(28, 41, 77, 0.15);
 
@@ -243,20 +245,21 @@
 
     display: grid;
     grid-template-columns:  1fr;
-    grid-template-rows: repeat(4, 61px);
+    grid-template-rows: 60px 1px 60px 1px 60px 1px 60px;
     align-items: center;
-    margin: 0 0 0 10px;
+    margin: 0 10px 0 10px;
     padding: 0;
 
-    border-bottom: 1px solid rgba(40, 47, 54, 0.15);
+    // border-bottom: 1px solid rgba(40, 47, 54, 0.15);
 
     @include mq($tablet) 
     {
-        grid-template-columns:  minmax(150px, 198px) minmax(130px, 194px)  minmax(130px, 195px)  minmax(180px, 195px) minmax(150px, 1fr) ;
-        grid-template-rows: 260px;
+        grid-template-columns:  minmax(150px, 195px) minmax(130px, 194px)  minmax(130px, 195px)  minmax(180px, 195px) minmax(150px, 1fr) ;
+        grid-template-rows: 217px;
         align-items: flex-start;
         margin: 0;
-        padding: 47px 0 0 0;
+        padding: 48px 0 0 0;
+        border-bottom: 1px solid rgba(40, 47, 54, 0.15);
     }
 
     ul 
@@ -264,37 +267,120 @@
         // padding: 0 0 20px 0;
     }
 
-    .footer__buyers
-    { 
-        border-bottom: 1px solid  rgba(42, 61, 72, 0.15);
-        
+    .footer__line
+    {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: rgba(42, 61, 72, 0.15);
+
         @include mq($tablet)
         {
-            border-bottom: none;
+            display: none;
         }
+    }
+
+    .footer__buyers
+    { 
+        position: relative;
+        // border-bottom: 1px solid  rgba(42, 61, 72, 0.15);
+        
+       
+
+        &::after
+        {
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+            background-color: #2A3D48;
+            -webkit-mask-image: url(../../assets/svg/arrow.svg);
+            mask-image: url(../../assets/svg/arrow.svg);
+
+            @include mq($tablet)
+            {
+                display: none;
+            }
+        }
+        
     }
 
     .footer__publishing
     { 
-        border-bottom: 1px solid  rgba(42, 61, 72, 0.15);
-        
-        @include mq($tablet)
+        // border-bottom: 1px solid  rgba(42, 61, 72, 0.15);
+        position: relative;
+
+        &::after
         {
-            border-bottom: none;
-        } 
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+            background-color: #2A3D48;
+            -webkit-mask-image: url(../../assets/svg/arrow.svg);
+            mask-image: url(../../assets/svg/arrow.svg);
+
+            @include mq($tablet)
+            {
+                display: none;
+            }
+        }
     }
 
     .footer__books 
     { 
-        border-bottom: 1px solid  rgba(42, 61, 72, 0.15);
-        
-        @include mq($tablet)
+        // border-bottom: 1px solid  rgba(42, 61, 72, 0.15);
+        position: relative;
+
+        &::after
         {
-            border-bottom: none;
-        } 
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+            background-color: #2A3D48;
+            -webkit-mask-image: url(../../assets/svg/arrow.svg);
+            mask-image: url(../../assets/svg/arrow.svg);
+
+            @include mq($tablet)
+            {
+                display: none;
+            }
+        }
     }
 
-    .footer__price-list { }
+    .footer__price-list 
+    {
+        position: relative;
+
+        &::after
+        {
+            content: '';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+            background-color: #2A3D48;
+            -webkit-mask-image: url(../../assets/svg/arrow.svg);
+            mask-image: url(../../assets/svg/arrow.svg);
+
+            @include mq($tablet)
+            {
+                display: none;
+            }
+        }
+    }
 
     .footer__title
     { 
@@ -302,7 +388,7 @@
 
         @include mq($tablet)
         {
-            margin: 0 0 19px 0;
+            margin: 0 0 20px 0;
         }
     }
 
@@ -422,38 +508,237 @@
 
 .footer__bottom
 {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0 45px 0;
+    // display: flex;
+    // justify-content: space-between;
+    // padding: 40px 0 45px 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 275px 61px;
+    // grid-template-rows: 1px 20px 20px 1px 60px 1px 60px 1px 60px 1px 60px ;
+
+    @include  mq($desktop)
+    {
+        // grid-template-columns: 1fr;
+        // grid-template-rows: 50px 50px;
+
+        grid-template-columns: 202px 1fr;
+        grid-template-rows: 100px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    @include mq($tablet)
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 50px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    
 
     .footer__bottom-left
     {
+        order: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1px 60px;
+
+        @include mq($desktop)
+        {
+            order: 2;
+        }
+
+        @include mq($tablet)
+        {
+            order: 3;
+            display: block;
+        }
+
         a
         {
+            margin: 0 0 0 10px;
+            // justify-self: center;
+            align-self: center;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $ocean-blue-color-50;
+
+            @include mq($tablet)
+            {
+                margin: 0;
+            }
+        }
+
+        .footer__bottom-line
+        {
+            
+            width: calc(100% + 30px);
+            height: 1px;
+            transform: translateX(-20px);
+        
+            background-color: rgba(28, 41, 77, 0.15);
+        
+            @include mq($tablet)
+            {
+                display: none;
+            }
+
+            // &--order10{ order: 10;}
+        }
+    }
+
+    .footer__bottom-right
+    {
+        // display: flex;
+        // justify-content: space-between;
+        // width: 65%;
+        order: 1;
+        display: grid;
+        // display: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1px 40px 50px 1px 60px 1px 60px 1px 60px 1px;
+        align-items: center;
+        // justify-self: start;
+
+        @include mq($tablet)
+        {
+            order: 2;
+            grid-template-columns: minmax(310px, 378px) minmax(212px, 242px) 121px;
+             grid-template-rows: auto;
+            justify-self: end;
+            // grid-template-rows: 105px;
+        }
+
+        @include mq($desktop) 
+        { 
+            // justify-self: center; 
+        }
+
+        a { margin: 0 0 0 11px; }
+
+        .footer__bottom-line
+        {
+            width: calc(100% + 30px);
+            height: 1px;
+            transform: translateX(-20px);
+
+            background-color: rgba(28, 41, 77, 0.15);
+
+            @include mq($tablet)
+            {
+                display: none;
+            }
+
+            &--order1 { order: 1; }      
+            &--order4 { order: 4; } 
+            &--order6 { order: 6; } 
+            &--order8 { order: 8; }       
+        }
+        // .footer__adress { margin: 0 0 0 12px; }
+        // .footer__politics { margin: 0 0 0 40px; }
+        // a
+        // {
+        //     font-style: normal;
+        //     font-weight: 400;
+        //     font-size: 14px;
+        //     line-height: 20px;
+        //     color: $ocean-blue-color-80; 
+        // }
+
+        .footer__adress
+        {
+            order: 9;
+
+            display: flex;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $ocean-blue-color-50;
+
+            @include mq($tablet) { order: 1; }
+
+            .footer__adress-icon
+            {
+                display: block;
+                width: 20px;
+                height: 20px;
+                @include mq($tablet) { display: none; }
+            }
+        }
+
+        .footer__politics
+        {
+            order: 2;
+            align-self: end;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $ocean-blue-color-50;
+
+            // @include mq($tablet) { order: 1; }
+        }
+
+        .footer__offer
+        {
+            order: 3;
+
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 20px;
             color: $ocean-blue-color-50;
         }
-        
-    }
 
-    .footer__bottom-right
-    {
-        display: flex;
-        justify-content: space-between;
-        width: 65%;
-
-        .footer__adress { margin: 0 0 0 12px; }
-        .footer__politics { margin: 0 0 0 40px; }
-        a
+        .footer__bottom-phone
         {
+            order: 5;
+
+            display: flex;
+			align-items: center;
+
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
-            line-height: 20px;
-            color: $ocean-blue-color-80; 
+            line-height: 16px;
+            color: $ocean-blue-color;
+
+            @include mq($tablet)
+            {
+                display: none;
+            }
+
+            span { margin: 0 5px 0 5px; }
         }
+
+        .footer__bottom-email
+        {
+            order: 7;
+
+            display: flex;
+			align-items: center;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: $ocean-blue-color-80;
+
+            @include mq($tablet)
+            {
+                display: none;
+            }
+
+            span { margin: 0 0 0 5px; }
+        }
+
     }
 }
