@@ -2,31 +2,41 @@
 {
     position: relative;
     background: #FFFFFF;
-    margin: 30px 0 0 0;
+    margin: 12px 0 0 0;
     padding: 18px 0 10px 0;
     border-radius: 5px;
+
+    @include mq($tablet) { margin: 30px 0 0 0; }
 
     .everybody__theme
     {
         display: block;
-        margin: 0 0 0 25px;
+        margin: 0 0 0 10px;
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 25px;
         color: $ocean-blue-color;
+
+        @include mq($tablet) { margin: 0 0 0 25px; }
     }
 
     .everybody__form
     {
         position: absolute;
         top: 15px;
-        right: 25px;
+        right: 8px;
         display: flex;
         width: 61px;
         height: 30px;
         border: 1px solid rgba(28, 41, 77, 0.15);
         border-radius: 5px;
+
+        @include mq($tablet) 
+        {
+            top: 15px;
+            right: 25px;
+        }
 
         .everybody__btn
         {
@@ -51,14 +61,32 @@
         height: 100%;
         border-top:  1px solid rgba(28, 41, 77, 0.15);
         border-bottom:  1px solid rgba(28, 41, 77, 0.15);
+
         .everybody__item
         {
-            padding: 0 15px 0 15px;
-            // width: 291px;
-            height: 100%;
-            border-right: 1px solid rgba(28, 41, 77, 0.15);
-        }
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+            &:not(:last-of-type) { border-right: 1px solid rgba(28, 41, 77, 0.15); }
 
+            &:nth-child(3) 
+            { 
+                display: none; 
+
+                @media (max-width: 1044px) {
+                    display: none; 
+                }
+
+                @include mq($tablet) { display: block; }
+            }
+
+            &:nth-child(4) 
+            { 
+                display: none; 
+
+                @include mq($tablet) { display: block; }
+            }
+        }
     }
 
     .everybody__show
