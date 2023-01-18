@@ -5,8 +5,22 @@
 
 		{% include 'blocks/contentTop/contentTop.twig' %}
 
-		{% include 'blocks/everybody/everybody.twig' %}
+		{% include 'blocks/everybody/everybody.twig' with {
+			 'booksBool': true,
+			 'everybodyTheme': 'Новые поступления',
+			 'everybodyShow': 'Показать все книги раздела'
+			 } 
+		%}
 
+		{% include 'blocks/discounts/discounts.twig' %}
+
+		{% include 'blocks/everybody/everybody.twig' with {
+			 'booksBool': true,
+			 'everybodyTheme': 'Готовятся к выходу',
+			 'everybodyShow': 'Показать все книги раздела'
+			 } 
+		%}
+		{% include 'blocks/services/services.twig' %}
 		
 
 		{# {% include 'blocks/books/books.twig' with {

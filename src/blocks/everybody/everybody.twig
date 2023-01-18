@@ -1,5 +1,5 @@
 <div class="everybody">
-    <a class="everybody__theme" href="#">Новые поступления</a>
+    <a class="everybody__theme" href="#">{{everybodyTheme}}</a>
 
     <form class="everybody__form" action="#">
         <button class="everybody__btn everybody__btn--left">
@@ -13,50 +13,62 @@
 
     <div class="everybody__body">
         <div class="everybody__item">
-            {% include 'blocks/books/books.twig' with {
-                'booksClassHit': 'books__link-hit', 'booksTextHit': 'Бестселлер',
-                'booksClassPromotion': 'books__link-promotion', 'booksTextPromotion': '1+1=3',
-                'booksImgPath': '/img/books1.jpg',
-                'booksTextTheme': 'Корпоративное право',
-                'booksTextName': 'Инвестирование: способы, риски, субъекты : монография',
-                'booksTextAuthor': 'Майфат А.В.',
-                'booksTextPrice': '4 450 ₽ ',
-            }%}
+            {% if booksBool == true %}
+                {% include 'blocks/books/books.twig' with {
+                        'booksClassHit': 'books__link-hit', 'booksTextHit': 'Бестселлер',
+                        'booksClassPromotion': 'books__link-promotion', 'booksTextPromotion': '1+1=3',
+                        'booksImgPath': '/img/books1.jpg',
+                        'booksTextTheme': 'Корпоративное право',
+                        'booksTextName': 'Инвестирование: способы, риски, субъекты : монография',
+                        'booksTextAuthor': 'Майфат А.В.',
+                        'booksTextPrice': '4 450 ₽ ',
+                        }
+                %}
+            {% endif %}
         </div>
         <div class="everybody__item">
-            {% include 'blocks/books/books.twig' with {
-                'booksClassNew': 'books__link-new', 'booksTextNew': 'Новинка',
-                'booksImgPath': '/img/books1.jpg' ,
-                'booksTextTheme': 'Договорное право',
-                'booksTextName': 'Договор коммерческой концессии (франчайзинг). Граж...',
-                'booksTextAuthor': 'Багдасарян А.Ф.',
-                'booksTextPrice': '372 ₽ ',
-            }%}
+            {% if booksBool == true %}
+                {% include 'blocks/books/books.twig' with {
+                        'booksClassNew': 'books__link-new', 'booksTextNew': 'Новинка',
+                        'booksImgPath': '/img/books1.jpg' ,
+                        'booksTextTheme': 'Договорное право',
+                        'booksTextName': 'Договор коммерческой концессии (франчайзинг). Граж...',
+                        'booksTextAuthor': 'Багдасарян А.Ф.',
+                        'booksTextPrice': '372 ₽ ',
+                        }
+                 %}
+            {% endif %}
         </div>
         <div class="everybody__item">
-            {% include 'blocks/books/books.twig' with {
-                'booksImgPath': '/img/books1.jpg',
-                'booksTextTheme': 'Конкурентное право',
-                'booksTextName': 'Договор коммерческой концессии (франчайзинг). Граж...',
-                'booksTextAuthor': 'Башлаков-Николаев И.В.',
-                'booksClassPriceRed': 'books__link-price--red',
-                'booksTextPrice': '984 ₽',
-                'booksTextPriceOld': '1 284 ₽',
-                'booksTextPriceProfit': 'Выгода 300 ₽'
-            }%}
+            {% if booksBool == true %}
+                 {% include 'blocks/books/books.twig' with {
+                        'booksImgPath': '/img/books1.jpg',
+                        'booksTextTheme': 'Конкурентное право',
+                        'booksTextName': 'Договор коммерческой концессии (франчайзинг). Граж...',
+                        'booksTextAuthor': 'Башлаков-Николаев И.В.',
+                        'booksClassPriceRed': 'books__link-price--red',
+                        'booksTextPrice': '984 ₽',
+                        'booksTextPriceOld': '1 284 ₽',
+                        'booksTextPriceProfit': 'Выгода 300 ₽'
+                }
+            %}
+            {% endif %}
         </div>
         <div class="everybody__item">
-            {% include 'blocks/books/books.twig' with {
-                'booksClassHit': 'books__link-hit', 'booksTextHit': 'Бестселлер',
-                'booksClassPromotion': 'books__link-promotion', 'booksTextPromotion': '1+1=3',
-                'booksImgPath': '/img/books1.jpg',
-                'booksTextTheme': 'Корпоративное право',
-                'booksTextName': 'Инвестирование: способы, риски, субъекты : монография',
-                'booksTextAuthor': 'Майфат А.В.',
-                'booksTextPrice': '450 ₽ ',
-            }%}
+            {% if booksBool == true %}
+                {% include 'blocks/books/books.twig' with {
+                        'booksClassHit': 'books__link-hit', 'booksTextHit': 'Бестселлер',
+                        'booksClassPromotion': 'books__link-promotion', 'booksTextPromotion': '1+1=3',
+                        'booksImgPath': '/img/books1.jpg',
+                        'booksTextTheme': 'Корпоративное право',
+                        'booksTextName': 'Инвестирование: способы, риски, субъекты : монография',
+                        'booksTextAuthor': 'Майфат А.В.',
+                        'booksTextPrice': '450 ₽ ',
+                }
+            %}
+            {% endif %}
         </div>
     </div>
 
-    <a class="everybody__show" href="#">Показать все книги раздела</a>
+    <a class="everybody__show" href="#">{{everybodyShow}}</a>
 </div>

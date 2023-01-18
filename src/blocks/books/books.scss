@@ -130,25 +130,27 @@
 
     .books__p-name
     {
-        // display: block;
-        // display: inline-block;
+      
         margin: 0 0 9px 0;
-        width: 100%;
-        max-width: 223px;
-        // height: 38px;
 
-        -webkit-line-clamp: 2; /* количество строк */
+        display: -webkit-box;
+        max-width: 223px;
+        height: 57px;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
 
-        overflow: hidden;
-        text-overflow: ellipsis;
-        // white-space: nowrap;
-        // word-wrap: wrap;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 19px;
         color: $ocean-blue-color;
+
+        @include mq($tablet) 
+        {
+            height: 38px;
+            -webkit-line-clamp: 2;
+        }
     }
 
     .books__link-author
@@ -167,7 +169,9 @@
 
     .books__prise-section
     {
-        margin: 0 0 5px 0;
+        margin: 0;
+
+        @include mq($tablet) { margin: 0 0 5px 0; }
         
         .books__link-price
         {
@@ -234,10 +238,15 @@
         gap: 8px;
         justify-content: space-between;
         // margin: 5px 0 0 0;
+        margin: 0 0 8px 0;
         max-width: 206px;
         width: 100%;
 
-        @include mq($tablet) { flex-wrap: nowrap; }
+        @include mq($tablet) 
+        { 
+            flex-wrap: nowrap; 
+            margin: 0 0 12px 0;
+        }
 
         .books__link-rating
         {
@@ -290,7 +299,7 @@
     .books__form
     {
         display: flex;
-        margin: 13px 0 0 0;
+        // margin: 13px 0 0 0;
         // justify-self: end;
         // align-self: center;
         
@@ -300,15 +309,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 8px;
+
             width: 100%;
             max-width: 146px;
-            height: 40px;
+            height: 35px;
             border: 1px solid #EEEEEE;
             border-radius: 5px;
 
+            @include mq($tablet) { height: 40px; }
+
             span
             {
-                padding: 0 0 0 11px;
+                // padding: 0 0 0 11px;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 14px;
@@ -324,9 +337,11 @@
             justify-content: center;
             margin: 0 0 0 10px;
             width: 40px;
-            height: 40px;
+            height: 35px;
             border: 1px solid #EEEEEE;
             border-radius: 5px;
+
+            @include mq($tablet) { height: 40px; }
         }
     }
 }
