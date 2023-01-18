@@ -11,8 +11,8 @@
         </button>
     </form>
 
-    <div class="everybody__body">
-        <div class="everybody__item">
+    <div class="everybody__body {{everyBodyModificator}}">
+        <div class="everybody__item {{everybodyItemNone}}">
             {% if booksBool == true %}
                 {% include 'blocks/books/books.twig' with {
                         'booksClassHit': 'books__link-hit', 'booksTextHit': 'Бестселлер',
@@ -24,6 +24,10 @@
                         'booksTextPrice': '4 450 ₽ ',
                         }
                 %}
+            {% endif %}
+
+            {% if newsBool == true %}
+                {% include 'blocks/news/news.twig' %}
             {% endif %}
         </div>
         <div class="everybody__item">
@@ -38,8 +42,12 @@
                         }
                  %}
             {% endif %}
+
+            {% if newsBool == true %}
+                {% include 'blocks/news/news.twig' %}
+            {% endif %}
         </div>
-        <div class="everybody__item">
+        <div class="everybody__item everybody__item--child3 {{everybodyItemNone}} ">
             {% if booksBool == true %}
                  {% include 'blocks/books/books.twig' with {
                         'booksImgPath': '/img/books1.jpg',
@@ -66,6 +74,10 @@
                         'booksTextPrice': '450 ₽ ',
                 }
             %}
+            {% endif %}
+
+            {% if newsBool == true %}
+                {% include 'blocks/news/news.twig' %}
             {% endif %}
         </div>
     </div>

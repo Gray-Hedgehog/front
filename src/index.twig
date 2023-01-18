@@ -20,7 +20,17 @@
 			 'everybodyShow': 'Показать все книги раздела'
 			 } 
 		%}
+
 		{% include 'blocks/services/services.twig' %}
+
+		{% include 'blocks/everybody/everybody.twig' with {
+			 'newsBool': true,
+			 'everyBodyModificator': 'everybody__body--bottom-border',
+			 'everybodyItemNone': 'everybody__item--none', 
+			 'everybodyTheme': 'Новости',
+			 } 
+		%}
+
 		
 
 		{# {% include 'blocks/books/books.twig' with {

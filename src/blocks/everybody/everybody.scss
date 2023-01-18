@@ -62,25 +62,36 @@
         border-top:  1px solid rgba(28, 41, 77, 0.15);
         border-bottom:  1px solid rgba(28, 41, 77, 0.15);
 
+        &--bottom-border 
+        { 
+            border-bottom: 1px solid rgba(28, 41, 77, 0.15); 
+
+            @include mq($tablet) { border-bottom: none; }
+        }
+
         .everybody__item
         {
             display: flex;
             margin: 0 auto;
             width: 100%;
+
             &:not(:last-of-type) { border-right: 1px solid rgba(28, 41, 77, 0.15); }
 
-            &:nth-child(3) 
+            &--child3 
             { 
-                display: none; 
+                display: block; 
 
-                @media (max-width: 1044px) {
-                    display: none; 
-                }
-
-                @include mq($tablet) { display: block; }
+                @media (max-width: 1044px) { display: none; }
+                
+                @media (max-width: 769px) { display: none; }
             }
 
-            &:nth-child(4) 
+            &--none 
+            { 
+                display: none; 
+            }
+
+            &:nth-child(2) 
             { 
                 display: none; 
 
