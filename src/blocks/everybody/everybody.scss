@@ -129,6 +129,7 @@
         &--news 
         {
             width: 147px;
+            margin: 12px auto 0 auto;
 
             @include mq($tablet) { display: none; }
         }
