@@ -2,6 +2,10 @@
 {
     width: 100%;
     background: $footer-top-background;
+
+    margin: 10px 0 0 0;
+
+    @include mq($tablet) { margin: 30px 0 0 0; }
 }
 
 .footer__top{
@@ -19,7 +23,9 @@
     @include mq($tablet)
     {
         grid-template-columns: 1fr  150px;
+        grid-template-rows: 90px;
         grid-gap: 200px;
+        align-items: center;
     }
 
     .footer__top-left
@@ -255,10 +261,10 @@
     @include mq($tablet) 
     {
         grid-template-columns:  minmax(150px, 195px) minmax(130px, 194px)  minmax(130px, 195px)  minmax(180px, 195px) minmax(150px, 1fr) ;
-        grid-template-rows: 217px;
+        grid-template-rows: 170px;
         align-items: flex-start;
         margin: 0;
-        padding: 48px 0 0 0;
+        padding: 44px 0 44px 0;
         border-bottom: 1px solid rgba(40, 47, 54, 0.15);
     }
 
