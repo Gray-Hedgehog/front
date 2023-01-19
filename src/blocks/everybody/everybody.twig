@@ -1,4 +1,4 @@
-<div class="everybody">
+<div class="everybody {{everybodyNews}}">
     <a class="everybody__theme" href="#">{{everybodyTheme}}</a>
 
     <form class="everybody__form" action="#">
@@ -11,8 +11,8 @@
         </button>
     </form>
 
-    <div class="everybody__body {{everyBodyModificator}}">
-        <div class="everybody__item {{everybodyItemNone}}">
+    <div class="everybody__body {{everybodyBodyModificator}}">
+        <div class="everybody__item {{everybodyItemModificator}}">
             {% if booksBool == true %}
                 {% include 'blocks/books/books.twig' with {
                         'booksClassHit': 'books__link-hit', 'booksTextHit': 'Бестселлер',
@@ -82,5 +82,5 @@
         </div>
     </div>
 
-    <a class="everybody__show" href="#">{{everybodyShow}}</a>
+    <a class="everybody__show {{everybodyShowNews}}" href="#">{{everybodyShow}}</a>
 </div>

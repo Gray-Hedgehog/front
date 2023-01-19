@@ -8,6 +8,11 @@
 
     @include mq($tablet) { margin: 30px 0 0 0; }
 
+    &--news 
+    { 
+        @include mq($tablet) { padding: 18px 0 0 0;  }
+    }
+
     .everybody__theme
     {
         display: block;
@@ -77,6 +82,13 @@
 
             &:not(:last-of-type) { border-right: 1px solid rgba(28, 41, 77, 0.15); }
 
+            &--new 
+            {
+                display: none;
+
+                @include mq($tablet) { display: block; }
+            }
+
             &--child3 
             { 
                 display: block; 
@@ -113,5 +125,12 @@
         color: $ocean-blue-color;
 
         @include mq($tablet) { margin: 13px auto 0 auto; }
+
+        &--news 
+        {
+            width: 147px;
+
+            @include mq($tablet) { display: none; }
+        }
     }
 }
