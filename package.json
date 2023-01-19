@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "check": "node check.js",
     "dev": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "deploy": "gh-pages -d pages"
   },
   "pre-commit": [
     "check"
@@ -42,6 +43,7 @@
   },
   "dependencies": {
     "directory-tree": "^2.2.5",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.3.1",
     "map-stream": "0.0.7"
   },
@@ -52,5 +54,5 @@
   "bugs": {
     "url": "https://github.com/odvapro/front/issues"
   },
-  "homepage": "https://github.com/odvapro/front#readme"
+  "homepage": "https://Gray-Hedgehog.github.io"
 }
