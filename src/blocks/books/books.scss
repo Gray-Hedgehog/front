@@ -79,17 +79,6 @@
         max-width: 126px;
 
         @include mq($tablet) { max-width: 167px; }
-
-        // .books__img
-        // {
-        //     display: flex;
-        //     margin: 0 auto;
-        //     width: 100%;
-        //     max-width: 126px;
-        //     height: auto;
-            
-        //     // @include mq($tablet) { max-width: 147px; }
-        // }
     }
 
     .books__img
@@ -115,18 +104,6 @@
         letter-spacing: -0.1px;
         color: $ocean-blue-color-50;
     }
-
-    // .books__link-name
-    // {
-    //     display: inline-block;
-    //     margin: 7px 0 10px 0;
-    //     height: 57px;
-    //     width: 100%;
-    //     @include mq($tablet) 
-    //     { 
-    //         height: 38px; 
-    //     }
-    // }
 
     .books__p-name
     {
@@ -157,7 +134,6 @@
     {
         display: block;
         margin: 0 0 8px 0;
-        // margin: 0;
 
         font-style: normal;
         font-weight: 400;
@@ -237,7 +213,6 @@
         flex-wrap: wrap;
         gap: 8px;
         justify-content: space-between;
-        // margin: 5px 0 0 0;
         margin: 0 0 8px 0;
         max-width: 206px;
         width: 100%;
@@ -254,7 +229,6 @@
             align-items: center;
             justify-content: center;
             margin: 0;
-            // padding: 5px 8px 5px 9px;
             height: 25px;
             width: 52px;
             border-radius: 5px;
@@ -274,8 +248,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            // margin: 0 0 0 10px;
-            // padding: 7px 10px 6px 11px;
             width: 100%;
             max-width: 144px;
             height: 25px;
@@ -288,8 +260,6 @@
             line-height: 12px;
             color: rgb(121, 134, 203);
 
-            // margin: 8px 0 0 0; 
-
             @include mq($tablet) { margin: 0; }
 
             span { margin:  2px 0 0 4px; }
@@ -299,10 +269,6 @@
     .books__form
     {
         display: flex;
-        // margin: 13px 0 0 0;
-        // justify-self: end;
-        // align-self: center;
-        
 
         .books__busket-btn
         {
@@ -321,7 +287,6 @@
 
             span
             {
-                // padding: 0 0 0 11px;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 14px;
