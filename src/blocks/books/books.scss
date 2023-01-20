@@ -116,17 +116,17 @@
         color: $ocean-blue-color-50;
     }
 
-    .books_link-name
-    {
-        display: inline-block;
-        margin: 7px 0 10px 0;
-        height: 57px;
-        width: 100%;
-        @include mq($tablet) 
-        { 
-            height: 38px; 
-        }
-    }
+    // .books__link-name
+    // {
+    //     display: inline-block;
+    //     margin: 7px 0 10px 0;
+    //     height: 57px;
+    //     width: 100%;
+    //     @include mq($tablet) 
+    //     { 
+    //         height: 38px; 
+    //     }
+    // }
 
     .books__p-name
     {
