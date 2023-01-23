@@ -2,14 +2,16 @@
 
 
 <div class="book">
-    <div class="book__title">{{bookTitle}}</div>
+    <a class="book__title"><h3>{{bookTitle}}</h3></a>
     <div class="book__time">{{bookTime}}</div>
     <div class="book__image">
-        <img class="book__img" src="{{bookPicture}}" alt="">
+    <a class="book__img" href="#">
+        <img src="{{bookPicture}}" alt="book name">
+    </a>
     </div>
     
     <div class="book__chapter">{{bookChapter}}</div>
-    <div class="book__name">{{bookName}}</div>
+    <a class="book__name" href="#">{{bookName}}</a>
     <div class="book__author">{{bookAuthor}}</div>
     <div class="book__price">{{bookPrice}}</div>
     <form class="book__form" action="#">

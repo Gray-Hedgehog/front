@@ -8,14 +8,17 @@
 
     @include mq($tablet) { padding: 25px 32px; }
 
-    .news__image 
+    .news__link-image
     {
         margin: 0 auto 15px auto;
-        max-width: 350px;
-        width: 100%;
-        border-radius: 5px;
-
-        @include mq($tablet) { max-width: 320px; }
+        .news__image
+        {
+            max-width: 350px;
+            width: 100%;
+            border-radius: 5px;
+    
+            @include mq($tablet) { max-width: 320px; }
+        }
     }
 
     .news__date
@@ -32,11 +35,17 @@
     .news__theme
     {
         margin: 0 0 8px 0;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        color: $ocean-blue-color;
+        
+        h3
+        {
+            margin: 0;
+            
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: $ocean-blue-color;
+        }
     }
 
     .news__text

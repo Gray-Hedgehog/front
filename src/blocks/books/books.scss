@@ -96,13 +96,16 @@
     {
         display: block;
         margin: 15px 0 7px 0;
-
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        letter-spacing: -0.1px;
-        color: $ocean-blue-color-50;
+        h3
+        {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: -0.1px;
+            color: $ocean-blue-color-50;
+        }
+        
     }
 
     .books__p-name
