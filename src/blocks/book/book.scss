@@ -1,11 +1,13 @@
 .book
 {
     position: relative;
-    padding: 22px 20px 26px 20px;
+    padding: 22px 20px 20px 20px;
     height: 100%;
     background: #FFFFFF;
     border-radius: 5px;
 
+    // @include mq($tablet) { padding:22px 20px 26px 20px; }
+    
     .book__title
     {
         display: block;

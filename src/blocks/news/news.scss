@@ -10,29 +10,19 @@
 
     .news__link-image
     {
+        display: block;
         margin: 0 auto 15px auto;
 
-        width: 100%;
-        max-width: 335px;
-
-        height: 100%;
-        max-height: 224px
-
-        @include mq($tablet)
-        {
-            max-width: 320px;
-            max-height: 200px
-        }
+        // @include mq($tablet) { margin: 0; }
 
         .news__image
         {
-            // max-width: 335px;
+            max-width: 325px;
             width: 100%;
             height: 100%;
-            // width: 100%
             border-radius: 5px;
     
-            // @include mq($tablet) { max-width: 320px; }
+            @include mq($tablet) { max-width: 310px; }
         }
     }
 

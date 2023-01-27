@@ -7,10 +7,7 @@
 
 	@include mq ($tablet)
 	{
-		&
-		{
-			display: block;
-		}
+		display: block;
 	}
 
 	.header__top
@@ -130,15 +127,12 @@
 	flex: 1 1 auto;
 	justify-content: space-between;
 	margin: 0;
-	padding: 13px 0 13px 0;
+	padding: 15px 0 14px 0;
 
 	@include mq($tablet)
 	{
-		&
-		{
-			margin: 20px 0 0 0 ;
-			padding: 0;
-		}
+		margin: 20px 0 0 0 ;
+		padding: 0;
 	}
 
 	.header__middle-left
@@ -146,34 +140,30 @@
 		display: flex;
 		flex: 1 1 auto;
 
-
-
 		@include mq($tablet)
 		{
-			&
-			{
-				opacity: 1;
-			}
+			opacity: 1;
 		}
 
 		.header__burger-btn
 		{
 			position: absolute;
-			top: 23px;
-			left: 18px;
+			top: 25px;
+			left: 20px;
 			display: block;
 
 			border: none;
 
 			@include mq($tablet)
 			{
-				&{ display: none; }
+				display: none;
 			}
 		}
 		
 		.logo
 		{
-			margin: 0 0 0 43px;
+			
+			margin: 0 0 0 45px;
 
 			@include mq($tablet) 
 			{
@@ -198,7 +188,7 @@
 			display: flex;
 			justify-content: space-between;
 
-			margin:  0 0 0 20px;
+			margin:  0 17px 0 20px;
 			max-width: 573px;
 			min-width: 186px;
 			width: 100%;
@@ -345,7 +335,7 @@
 		{
 			position: relative;
 			display: flex;
-			margin: 0 15px 0 14px;
+			margin: 0 9px 0 0;
 
 			@include mq($tablet)
 			{
