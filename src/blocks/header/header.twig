@@ -1,52 +1,39 @@
 <header>
-	<div class="header__wrapper"> 
+	<div class="header__wrapper">
 		<div class="container">
-
 			<div class="header__top">
 				<div class="header__information">
-
 					<a class="header__information-link" href="#">
 						{% include 'assets/svg/location.svg' %}
-						<span>Москва</span>	
+						<span>Москва</span>
 					</a>
-
 					<a class="header__information-link" href="#">
 						{% include 'assets/svg/delivery.svg' %}
-						<span>Доставка и оплата</span>	
+						<span>Доставка и оплата</span>
 					</a>
-
 					<a class="header__information-link" href="#">
 						{% include 'assets/svg/adress.svg' %}
-						<span>Адрес и часы работы</span> 
+						<span>Адрес и часы работы</span>
 					</a>
-
 				</div>
 
 				<div class="header__contacts">
-
 					<a class="header__email" href="#" >
 						{% include 'assets/svg/email.svg' %}
-						<span>market@estatut.ru</span> 
+						<span>market@estatut.ru</span>
 					</a>
-
 					<a class="header__phone" href="tel:89686606550" >
 						{% include 'assets/svg/phone.svg' %}
 						<span>8 (968) 660-65-50</span>
 						{% include 'assets/svg/i.svg' %}
 					</a>
-
 				</div>
 			</div>
-		</div>
-	</div>
-	
-	<div class="header__wrapper-mobile">
-		<div class="container">
-		
-			<div class="header__middle">
 
+
+
+			<div class="header__middle">
 				<div class="header__middle-left">
-					
 					<button class="header__burger-btn">
 						{% include 'assets/svg/catalog.svg' %}
 					</button>
@@ -54,65 +41,46 @@
 					<a class="logo" href="#">{% include 'assets/svg/logo.svg' %}</a>
 
 					<form class="header__form" action="#">
-						<input class="header__search" id="search" type="text" placeholder="Автор, название, ISBN">
-						<label for="search"></label>
+						<label class="header__label" for="search">
+							<input class="header__search" id="search" type="text" placeholder="Автор, название, ISBN">
+						</label>
 						<button class="header__search-btn">
 							{% include 'assets/svg/search.svg' %}
 							<span>Искать</span>
 						</button>
 					</form>
-
 				</div>
-
 				<div class="header__middle-right">
 					<a class="header__postponed" href="#">
 						{% include 'assets/svg/postponed.svg' %}
-						<span>Отложено</span> 
+						<span>Отложено</span>
 					</a>
 					<a class="header__login" href="#">
 						{% include 'assets/svg/login.svg' %}
-						<span>Войти</span> 
+						<span>Войти</span>
 					</a>
 					<a class="header__basket" href="#">
 						{% include 'assets/svg/basket.svg' %}
 						<div class="header__numbers-of-items">10</div>
-						<span>Корзина</span> 
+						<span>Корзина</span>
 					</a>
 				</div>
-
 			</div>
-		</div>	
-	</div>
-	
-
-	<div class="container">
 
 			<div class="header__bottom">
-
 				<a class="header__bottom-link" href="#">
 					{% include 'assets/svg/catalog.svg' %}
-					<span>Каталог</span> 
+					<span>Каталог</span>
 				</a>
-
 				<a class="header__bottom-link" href="#">Авторы</a>
-
 				<a class="header__bottom-link" href="#">Новинки</a>
-
 				<a class="header__bottom-link" href="#">
 					{% include 'assets/svg/discounts.svg' %}
-					<span class="header__bottom-link--red">Скидки</span> 
+					<span class="header__bottom-link--red">Скидки</span>
 				</a>
-
 				<a class="header__bottom-link" href="#">Партнёрам</a>
-
 				<a class="header__bottom-link" href="#">Мы</a>
-
 			</div>
-
+		</div>
 	</div>
-			
-
-		
-	
-	
 </header>

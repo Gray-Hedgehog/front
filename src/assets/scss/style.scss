@@ -10,7 +10,7 @@
 
 @import 'blocks/header/header';
 
-@import 'blocks/contentTop/contentTop';
+@import 'blocks/content-top/content-top';
 @import 'blocks/card/card';
 @import 'blocks/book/book';
 @import 'blocks/everybody/everybody';
@@ -20,14 +20,6 @@
 @import 'blocks/services/services';
 
 @import 'blocks/footer/footer';
-
-/* blocks */
-/* Пример подключения*/
-/* @import 'blocks/component/component'; */
-
-/* pages */
-/* @import 'index'; */
-
 
 * {
 	-webkit-box-sizing: border-box;

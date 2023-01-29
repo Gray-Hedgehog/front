@@ -7,7 +7,7 @@
     border-radius: 5px;
 
     // @include mq($tablet) { padding:22px 20px 26px 20px; }
-    
+
     .book__title
     {
         display: block;
@@ -29,11 +29,12 @@
         position: absolute;
         top: 20px;
         right: 20px;
-        padding: 5px 0 0 10px;
-        width: 68px;
-        height: 25px;
-        background: rgba(255, 122, 0, 0.15);
+
+        padding: 5px 10px;
         border-radius: 5px;
+
+        background: rgba(255, 122, 0, 0.15);
+
         font-style: normal;
         font-weight: 500;
         font-size: 12px;

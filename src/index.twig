@@ -3,13 +3,13 @@
 {% block page %}
 	<div class="container">
 
-		{% include 'blocks/contentTop/contentTop.twig' %}
+		{% include 'blocks/content-top/content-top.twig' %}
 
 		{% include 'blocks/everybody/everybody.twig' with {
 			 'booksBool': true,
 			 'everybodyTheme': 'Новые поступления',
 			 'everybodyShow': 'Показать все книги раздела'
-			 } 
+			 }
 		%}
 
 		{% include 'blocks/discounts/discounts.twig' %}
@@ -18,7 +18,7 @@
 			 'booksBool': true,
 			 'everybodyTheme': 'Готовятся к выходу',
 			 'everybodyShow': 'Показать все книги раздела'
-			 } 
+			 }
 		%}
 
 		{% include 'blocks/services/services.twig' %}
@@ -28,19 +28,10 @@
 			 'everybodyNews': 'everybody--news',
 			 'everybodyBodyModificator': 'everybody__body--bottom-border',
 			 'everybodyItemModificator': 'everybody__item--new',
-			 'everybodyItemNone': 'everybody__item--none', 
+			 'everybodyItemNone': 'everybody__item--none',
 			 'everybodyTheme': 'Новости',
 			 'everybodyShow': 'Показать все новости', 'everybodyShowNews': 'everybody__show--news'
-			 } 
+			 }
 		%}
 	</div>
-	
-
-	
-	{#
-		Пример подключения файла
-		{% include '/blocks/component/component.twig' %}
-		Пример подключения svg
-		{% include '/assets/component/component.svg' %}
-	#}
 {% endblock %}

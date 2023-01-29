@@ -1,4 +1,4 @@
-.books 
+.books
 {
     position: relative;
 
@@ -7,14 +7,14 @@
     margin: 0 auto;
     padding: 20px 10px 20px 10px;
     height: 100%;
-    
+
     background: $white-color;
-    
-    @include mq($tablet) 
-    { 
+
+    @include mq($tablet)
+    {
         padding: 25px 35px 20px;
     }
-    
+
     .books__link-new
     {
         position: absolute;
@@ -22,7 +22,6 @@
         left: 20px;
         padding: 5px 10px;
         height: 25px;
-        width: 70px;
         border-radius: 5px;
         background: #E2F6EC;
 
@@ -41,7 +40,6 @@
         left: 20px;
         padding: 5px 10px;
         height: 25px;
-        width: 86px;
         border-radius: 5px;
         background: #EEE9F7;
 
@@ -60,7 +58,7 @@
         left: 20px;
         padding: 5px 10px;
         height: 25px;
-        width: 54px;
+
         background: #FFEEEE;
         border-radius: 5px;
 
@@ -82,20 +80,21 @@
     }
 
     .books__img
-        {
-            display: flex;
-            margin: 0 auto;
-            width: 100%;
-            max-width: 124px;
-            height: auto;
-            
-            @include mq($tablet) { max-width: 140px; }
-        }
-    
+    {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 124px;
+        height: auto;
+
+        @include mq($tablet) { max-width: 140px; }
+    }
+
     .books__link-theme
     {
         display: block;
         margin: 15px 0 7px 0;
+
         h3
         {
             margin: 0;
@@ -106,12 +105,11 @@
             letter-spacing: -0.1px;
             color: $ocean-blue-color-50;
         }
-        
     }
 
     .books__p-name
     {
-      
+
         margin: 0 0 9px 0;
 
         display: -webkit-box;
@@ -127,7 +125,7 @@
         line-height: 19px;
         color: $ocean-blue-color;
 
-        @include mq($tablet) 
+        @include mq($tablet)
         {
             height: 38px;
             -webkit-line-clamp: 2;
@@ -152,7 +150,7 @@
         margin: 0;
 
         @include mq($tablet) { margin: 0 0 5px 0; }
-        
+
         .books__link-price
         {
             margin: 8px 0 0 0;
@@ -209,8 +207,7 @@
         }
 
     }
-    
-    
+
     .books__rating
     {
         display: flex;
@@ -221,9 +218,9 @@
         max-width: 206px;
         width: 100%;
 
-        @include mq($tablet) 
-        { 
-            flex-wrap: nowrap; 
+        @include mq($tablet)
+        {
+            flex-wrap: nowrap;
             margin: 0 0 12px 0;
         }
 
@@ -269,7 +266,7 @@
             span { margin:  2px 0 0 4px; }
         }
     }
-    
+
     .books__form
     {
         display: flex;
