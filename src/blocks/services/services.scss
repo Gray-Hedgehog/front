@@ -7,15 +7,16 @@
 
     margin: 10px 0 0 0;
 
-    @media (max-width: 1132px) {
+    @media (max-width: 1160px) {
         flex-wrap: wrap;
+        gap: 10px;
     }
-    
-    @include mq($tablet) 
-    { 
+
+    @include mq($tablet)
+    {
         flex-wrap: nowrap;
         gap: 30px;
-        margin: 30px 0 0 0; 
+        margin: 30px 0 0 0;
     }
 
     .services__item
@@ -26,16 +27,17 @@
         display: flex;
 
         width: 100%;
-        max-width: 355px;
+        // max-width: 355px;
         padding: 52px 20px 50px 125px;
 
         background: $white-color;
         border-radius: 5px;
 
-        @include mq($tablet) 
-        { 
+
+        @include mq($tablet)
+        {
             padding: 40px 18px 40px 88px;
-            max-width: 263px; 
+            // max-width: 263px;
         }
 
         .services__image
@@ -53,8 +55,8 @@
 
                 max-width: 150px;
 
-                @include mq($tablet) 
-                { 
+                @include mq($tablet)
+                {
                     top: 36px;
                     left: -14px;
                     max-width: 120px;
@@ -67,8 +69,8 @@
                 left: 0px;
                 max-width: 140px;
 
-                @include mq($tablet) 
-                { 
+                @include mq($tablet)
+                {
                     top: 40px;
                     left: -3px;
                     max-width: 100px;
@@ -81,8 +83,8 @@
                 left: 0px;
                 max-width: 135px;
 
-                @include mq($tablet) 
-                { 
+                @include mq($tablet)
+                {
                     top: 40px;
                     left: -1px;
                     max-width: 100px;
@@ -95,8 +97,8 @@
                 left: -3px;
                 max-width: 150px;
 
-                @include mq($tablet) 
-                { 
+                @include mq($tablet)
+                {
                     top: 28px;
                     left: -17px;
                     max-width: 135px;
@@ -109,7 +111,7 @@
             display: flex;
             flex-direction: column;
             gap: 5px;
-            
+
             .services__theme
             {
                 white-space: nowrap;
