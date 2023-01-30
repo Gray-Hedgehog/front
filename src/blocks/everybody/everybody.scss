@@ -8,11 +8,6 @@
 
 	@include mq($tablet) { margin: 30px 0 0 0; }
 
-	&--news
-	{
-		@include mq($tablet) { padding: 18px 0 0 0;  }
-	}
-
 	.everybody__theme
 	{
 		display: block;
@@ -97,11 +92,6 @@
 			@media (max-width: 1044px) { display: none; }
 
 			@media (max-width: 769px) { display: none; }
-		}
-
-		&--none
-		{
-			display: none;
 		}
 
 		&:nth-child(2)
