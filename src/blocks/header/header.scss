@@ -215,7 +215,6 @@
 		max-width: 450px;
 		border: none;
 		border-radius: 5px;
-		background: #F7F7F7;
 		background-image: url(../../assets/svg/search2.svg);
 		background-repeat: no-repeat;
 		background-position: 95% 50%;
@@ -225,6 +224,9 @@
 			border: 1px solid #DFE0E1;
 			border-right: none;
 			border-radius: 5px 0 0 5px;
+
+			background: none;
+
 			background-color: inherit;
 		}
 
