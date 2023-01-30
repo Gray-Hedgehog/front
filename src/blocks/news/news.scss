@@ -6,7 +6,11 @@
 	padding: 18px 0 10px 0;
 	border-radius: 5px;
 
-	@include mq($tablet) { margin: 30px 0 0 0; }
+	@include mq($tablet)
+	{
+		margin: 30px 0 0 0;
+		padding: 18px 0 0 0;
+	}
 
 	.news__title
 	{
@@ -62,26 +66,39 @@
 	border-top:  1px solid rgba(28, 41, 77, 0.15);
 	border-bottom:  1px solid rgba(28, 41, 77, 0.15);
 
-	&--bottom-border
-	{
-		@include mq($tablet) { border-bottom: none; }
-	}
+	@include mq($tablet) { border-bottom: none; }
 }
 
 .news__items
 {
 	display: flex;
+	margin: 0 auto;
+	width: 100%
 }
 
 .news__item
 {
-	width: 100%;
+	display: flex;
+	flex-direction: column;
 	margin: 0 auto;
+	padding: 20px 10px 20px 10px;
+	height: 100%;
+
+	background: $white-color;
+	// width: 100%;
+	// margin: 0 auto;
+
+	&:nth-of-type(1) { display: none; }
+	&:nth-of-type(2) { display: none; }
 
 	@include mq($tablet)
 	{
 		padding: 25px 30px 25px 29px;
+
+		&:nth-of-type(1) { display: flex; }
+		&:nth-of-type(2) { display: flex; }
 	}
+
 	&:not(:last-of-type)
 	{
 		border-right: 1px solid rgba(28, 41, 77, 0.15);
@@ -119,13 +136,22 @@
 
 .news__theme
 {
-	display: block;
+	// display: block;
 	margin: 0 0 8px 0;
-	color: #1C294D;
+	// color: rgb(28, 41, 77);
 
-	h3
+	.news__theme-h3
 	{
+		display: inline;
 		margin: 0;
+
+		display: -webkit-box;
+		max-width: 310px;
+		height: 40px;
+		overflow: hidden;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+
 		font-style: normal;
 		font-weight: 500;
 		font-size: 16px;
@@ -136,21 +162,48 @@
 
 .news__text
 {
-	display: block;
+	// display: block;
+	display: -webkit-box;
+	max-width: 320px;
+	height: 60px;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+
 	margin: 0 0 12px 0;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 20px;
+	// line-height: 20px;
 	color: $ocean-blue-color-80;
 }
 
-.news__item-btn{}
+.news__item-btn
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 0 5px;
+	height: 40px;
+	width: 100%;
+	max-width: 180px;
+
+	background: #FFFFFF;
+	border: 1px solid rgba(28, 41, 77, 0.15);
+	border-radius: 5px;
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: $ocean-blue-color;
+}
 
 .news__show
 {
 	display: block;
-	margin: 12px auto 0 auto;
+	margin: 10px auto 0 auto;
 	width: 147px;
 
 	font-style: normal;
