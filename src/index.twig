@@ -6,32 +6,21 @@
 		{% include 'blocks/content-top/content-top.twig' %}
 
 		{% include 'blocks/everybody/everybody.twig' with {
-			 'booksBool': true,
-			 'everybodyTheme': 'Новые поступления',
-			 'everybodyShow': 'Показать все книги раздела'
+			 'theme': 'Новые поступления',
+			 'show': 'Показать все книги раздела'
 			 }
 		%}
 
 		{% include 'blocks/discounts/discounts.twig' %}
 
 		{% include 'blocks/everybody/everybody.twig' with {
-			 'booksBool': true,
-			 'everybodyTheme': 'Готовятся к выходу',
-			 'everybodyShow': 'Показать все книги раздела'
+			 'theme': 'Готовятся к выходу',
+			 'show': 'Показать все книги раздела'
 			 }
 		%}
 
 		{% include 'blocks/services/services.twig' %}
 
-		{% include 'blocks/everybody/everybody.twig' with {
-			 'newsBool': true,
-			 'everybodyNews': 'everybody--news',
-			 'everybodyBodyModificator': 'everybody__body--bottom-border',
-			 'everybodyItemModificator': 'everybody__item--new',
-			 'everybodyItemNone': 'everybody__item--none',
-			 'everybodyTheme': 'Новости',
-			 'everybodyShow': 'Показать все новости', 'everybodyShowNews': 'everybody__show--news'
-			 }
-		%}
+		{% include 'blocks/news/news.twig'%}
 	</div>
 {% endblock %}
