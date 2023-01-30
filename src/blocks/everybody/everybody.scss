@@ -1,137 +1,137 @@
 .everybody
 {
-    position: relative;
-    background: #FFFFFF;
-    margin: 10px 0 0 0;
-    padding: 18px 0 10px 0;
-    border-radius: 5px;
+	position: relative;
+	background: #FFFFFF;
+	margin: 10px 0 0 0;
+	padding: 18px 0 10px 0;
+	border-radius: 5px;
 
-    @include mq($tablet) { margin: 30px 0 0 0; }
+	@include mq($tablet) { margin: 30px 0 0 0; }
 
-    &--news 
-    { 
-        @include mq($tablet) { padding: 18px 0 0 0;  }
-    }
+	&--news
+	{
+		@include mq($tablet) { padding: 18px 0 0 0;  }
+	}
 
-    .everybody__theme
-    {
-        display: block;
-        margin: 0 0 0 10px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 25px;
-        color: $ocean-blue-color;
+	.everybody__theme
+	{
+		display: block;
+		margin: 0 0 0 10px;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 25px;
+		color: $ocean-blue-color;
 
-        @include mq($tablet) { margin: 0 0 0 25px; }
-    }
+		@include mq($tablet) { margin: 0 0 0 25px; }
+	}
 
-    .everybody__form
-    {
-        position: absolute;
-        top: 15px;
-        right: 8px;
-        display: flex;
-        width: 61px;
-        height: 30px;
-        border: 1px solid rgba(28, 41, 77, 0.15);
-        border-radius: 5px;
+	.everybody__form
+	{
+		position: absolute;
+		top: 15px;
+		right: 8px;
+		display: flex;
+		width: 61px;
+		height: 30px;
+		border: 1px solid rgba(28, 41, 77, 0.15);
+		border-radius: 5px;
 
-        @include mq($tablet) 
-        {
-            top: 15px;
-            right: 25px;
-        }
+		@include mq($tablet)
+		{
+			top: 15px;
+			right: 25px;
+		}
 
-        .everybody__btn
-        {
-            display: flex;
-            padding: 9px;
-            border: none;
-        }
+		.everybody__btn
+		{
+			display: flex;
+			padding: 9px;
+			border: none;
+		}
 
-        .everybody__form-line
-        {
-            width: 1px;
-            height: 30px;
-            background: rgba(28, 41, 77, 0.15);
-            transform: translateY(-1px);
-        }
-    }
+		.everybody__form-line
+		{
+			width: 1px;
+			height: 30px;
+			background: rgba(28, 41, 77, 0.15);
+			transform: translateY(-1px);
+		}
+	}
 
-    .everybody__body
-    {
-        display: flex;
-        margin: 17px 0 0 0;
-        height: 100%;
-        border-top:  1px solid rgba(28, 41, 77, 0.15);
-        border-bottom:  1px solid rgba(28, 41, 77, 0.15);
+	.everybody__body
+	{
+		display: flex;
+		margin: 17px 0 0 0;
+		height: 100%;
+		border-top:  1px solid rgba(28, 41, 77, 0.15);
+		border-bottom:  1px solid rgba(28, 41, 77, 0.15);
 
-        &--bottom-border 
-        { 
-            border-bottom: 1px solid rgba(28, 41, 77, 0.15); 
+		&--bottom-border
+		{
+			border-bottom: 1px solid rgba(28, 41, 77, 0.15);
 
-            @include mq($tablet) { border-bottom: none; }
-        }
+			@include mq($tablet) { border-bottom: none; }
+		}
 
-        .everybody__item
-        {
-            display: flex;
-            margin: 0 auto;
-            width: 100%;
+		.everybody__item
+		{
+			display: flex;
+			margin: 0 auto;
+			width: 100%;
 
-            &:not(:last-of-type) { border-right: 1px solid rgba(28, 41, 77, 0.15); }
+			&:not(:last-of-type) { border-right: 1px solid rgba(28, 41, 77, 0.15); }
 
-            &--new 
-            {
-                display: none;
+			&--new
+			{
+				display: none;
 
-                @include mq($tablet) { display: block; }
-            }
+				@include mq($tablet) { display: block; }
+			}
 
-            &--child3 
-            { 
-                display: block; 
+			&--child3
+			{
+				display: block;
 
-                @media (max-width: 1044px) { display: none; }
-                
-                @media (max-width: 769px) { display: none; }
-            }
+				@media (max-width: 1044px) { display: none; }
 
-            &--none 
-            { 
-                display: none; 
-            }
+				@media (max-width: 769px) { display: none; }
+			}
 
-            &:nth-child(2) 
-            { 
-                display: none; 
+			&--none
+			{
+				display: none;
+			}
 
-                @include mq($tablet) { display: block; }
-            }
-        }
-    }
+			&:nth-child(2)
+			{
+				display: none;
 
-    .everybody__show
-    {
-        display: block;
-        margin: 10px auto 0 auto;
-        width: 188px;
+				@include mq($tablet) { display: block; }
+			}
+		}
+	}
 
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        color: $ocean-blue-color;
+	.everybody__show
+	{
+		display: block;
+		margin: 10px auto 0 auto;
+		width: 188px;
 
-        @include mq($tablet) { margin: 13px auto 0 auto; }
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+		color: $ocean-blue-color;
 
-        &--news 
-        {
-            width: 147px;
-            margin: 12px auto 0 auto;
+		@include mq($tablet) { margin: 13px auto 0 auto; }
 
-            @include mq($tablet) { display: none; }
-        }
-    }
+		&--news
+		{
+			width: 147px;
+			margin: 12px auto 0 auto;
+
+			@include mq($tablet) { display: none; }
+		}
+	}
 }

@@ -1,21 +1,21 @@
 <div class="book">
-    <a class="book__title"><h3>{{bookTitle}}</h3></a>
-    <div class="book__time">{{bookTime}}</div>
-    <div class="book__image">
-    <a class="book__img" href="#">
-        <img src="{{bookPicture}}" alt="book name">
-    </a>
-    </div>
+	<a class="book__title"><h3>{{bookTitle}}</h3></a>
+	<div class="book__time">{{bookTime}}</div>
+	<div class="book__image">
+	<a class="book__img" href="#">
+		<img src="{{bookPicture}}" alt="book name">
+	</a>
+	</div>
 
-    <div class="book__chapter">{{bookChapter}}</div>
-    <a class="book__name" href="#">{{bookName}}</a>
-    <div class="book__author">{{bookAuthor}}</div>
-    <div class="book__price">{{bookPrice}}</div>
-    <form class="book__form" action="#">
-        <button class="book__busket-btn">
-            {% include 'assets/svg/busket-orange.svg' %}
-            <span>В корзину</span>
-        </button>
-        <button class="book__posponed-btn">{% include 'assets/svg/postponed.svg' %}</button>
-    </form>
+	<div class="book__chapter">{{bookChapter}}</div>
+	<a class="book__name" href="#">{{bookName}}</a>
+	<div class="book__author">{{bookAuthor}}</div>
+	<div class="book__price">{{bookPrice}}</div>
+	<form class="book__form" action="#">
+		<button class="book__busket-btn">
+			{% include 'assets/svg/busket-orange.svg' %}
+			<span>В корзину</span>
+		</button>
+		<button class="book__posponed-btn">{% include 'assets/svg/postponed.svg' %}</button>
+	</form>
 </div>

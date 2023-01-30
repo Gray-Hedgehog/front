@@ -1,42 +1,41 @@
-
 <div class="books">
 
-    <a class="{{booksClassNew}}" href="#">{{booksTextNew}}</a>
-    <a class="{{booksClassHit}}" href="#">{{booksTextHit}}</a>
-    <a class="{{booksClassPromotion}}" href="#">{{booksTextPromotion}}</a>
+	<a class="{{booksClassNew}}" href="#">{{booksTextNew}}</a>
+	<a class="{{booksClassHit}}" href="#">{{booksTextHit}}</a>
+	<a class="{{booksClassPromotion}}" href="#">{{booksTextPromotion}}</a>
 
-    <a href="#">
-        <img class="books__img" src="{{booksImgPath}}" alt="books">
-    </a>
+	<a href="#">
+		<img class="books__img" src="{{booksImgPath}}" alt="books">
+	</a>
 
-    <a class="books__link-theme" href="#"><h3>{{booksTextTheme}}</h3></a>
+	<a class="books__link-theme" href="#"><h3>{{booksTextTheme}}</h3></a>
 
-    <a class="books__p-name" href="#"> {{booksTextName}} </a>
-    <a class="books__link-author" href="#">{{booksTextAuthor}}</a>
+	<a class="books__p-name" href="#"> {{booksTextName}} </a>
+	<a class="books__link-author" href="#">{{booksTextAuthor}}</a>
 
-    <div class="books__prise-section">
-        <a class="books__link-price {{booksClassPriceRed}}" href="#">{{booksTextPrice}}</a>
-        <a class="books__link-price books__link-price--old" href="#">{{booksTextPriceOld}}</a>
-        <a class="books__link-price books__link-price--profit" href="#">{{booksTextPriceProfit}}</a>
-    </div>
+	<div class="books__prise-section">
+		<a class="books__link-price {{booksClassPriceRed}}" href="#">{{booksTextPrice}}</a>
+		<a class="books__link-price books__link-price--old" href="#">{{booksTextPriceOld}}</a>
+		<a class="books__link-price books__link-price--profit" href="#">{{booksTextPriceProfit}}</a>
+	</div>
 
 
-    <div class="books__rating">
-        <a class="books__link-rating" href="#">
-            {% include 'assets/svg/rating.svg' %}
-            <span>4.9</span>
-        </a>
-        <a class="books__link-rec" href="#">
-            {% include 'assets/svg/likeBooks.svg' %}
-            <span>89% рекомендуют</span>
-        </a>
-    </div>
+	<div class="books__rating">
+		<a class="books__link-rating" href="#">
+			{% include 'assets/svg/rating.svg' %}
+			<span>4.9</span>
+		</a>
+		<a class="books__link-rec" href="#">
+			{% include 'assets/svg/likeBooks.svg' %}
+			<span>89% рекомендуют</span>
+		</a>
+	</div>
 
-    <form class="books__form" action="#">
-        <button class="books__busket-btn">
-            {% include 'assets/svg/busket-orange.svg' %}
-            <span>В корзину</span>
-        </button>
-        <button class="books__posponed-btn">{% include 'assets/svg/postponed.svg' %}</button>
-    </form>
+	<form class="books__form" action="#">
+		<button class="books__busket-btn">
+			{% include 'assets/svg/busket-orange.svg' %}
+			<span>В корзину</span>
+		</button>
+		<button class="books__posponed-btn">{% include 'assets/svg/postponed.svg' %}</button>
+	</form>
 </div>

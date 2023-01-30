@@ -1,314 +1,313 @@
 .books
 {
-    position: relative;
+	position: relative;
 
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 20px 10px 20px 10px;
-    height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 20px 10px 20px 10px;
+	height: 100%;
 
-    background: $white-color;
+	background: $white-color;
 
-    @include mq($tablet)
-    {
-        padding: 25px 35px 20px;
-    }
+	@include mq($tablet)
+	{
+		padding: 25px 35px 20px;
+	}
 
-    .books__link-new
-    {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        padding: 5px 10px;
-        height: 25px;
-        border-radius: 5px;
-        background: #E2F6EC;
+	.books__link-new
+	{
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		padding: 5px 10px;
+		height: 25px;
+		border-radius: 5px;
+		background: #E2F6EC;
 
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-        text-align: center;
-        color: #3DC47E;
-    }
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		color: #3DC47E;
+	}
 
-    .books__link-hit
-    {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        padding: 5px 10px;
-        height: 25px;
-        border-radius: 5px;
-        background: #EEE9F7;
+	.books__link-hit
+	{
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		padding: 5px 10px;
+		height: 25px;
+		border-radius: 5px;
+		background: #EEE9F7;
 
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-        text-align: center;
-        color: #AC8EE3;
-    }
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		color: #AC8EE3;
+	}
 
-    .books__link-promotion
-    {
-        position: absolute;
-        top: 55px;
-        left: 20px;
-        padding: 5px 10px;
-        height: 25px;
+	.books__link-promotion
+	{
+		position: absolute;
+		top: 55px;
+		left: 20px;
+		padding: 5px 10px;
+		height: 25px;
 
-        background: #FFEEEE;
-        border-radius: 5px;
+		background: #FFEEEE;
+		border-radius: 5px;
 
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-        text-align: center;
-        color: #FF4F52;
-    }
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		color: #FF4F52;
+	}
 
-    .books__image
-    {
-        display: flex;
-        margin: 0 auto;
-        max-width: 126px;
+	.books__image
+	{
+		display: flex;
+		margin: 0 auto;
+		max-width: 126px;
 
-        @include mq($tablet) { max-width: 167px; }
-    }
+		@include mq($tablet) { max-width: 167px; }
+	}
 
-    .books__img
-    {
-        display: flex;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 124px;
-        height: auto;
+	.books__img
+	{
+		display: flex;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 124px;
+		height: auto;
 
-        @include mq($tablet) { max-width: 140px; }
-    }
+		@include mq($tablet) { max-width: 140px; }
+	}
 
-    .books__link-theme
-    {
-        display: block;
-        margin: 15px 0 7px 0;
+	.books__link-theme
+	{
+		display: block;
+		margin: 15px 0 7px 0;
 
-        h3
-        {
-            margin: 0;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            letter-spacing: -0.1px;
-            color: $ocean-blue-color-50;
-        }
-    }
+		h3
+		{
+			margin: 0;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 15px;
+			letter-spacing: -0.1px;
+			color: $ocean-blue-color-50;
+		}
+	}
 
-    .books__p-name
-    {
+	.books__p-name
+	{
 
-        margin: 0 0 9px 0;
+		margin: 0 0 9px 0;
 
-        display: -webkit-box;
-        max-width: 223px;
-        height: 57px;
-        overflow: hidden;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
+		display: -webkit-box;
+		max-width: 223px;
+		height: 57px;
+		overflow: hidden;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
 
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 19px;
-        color: $ocean-blue-color;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 19px;
+		color: $ocean-blue-color;
 
-        @include mq($tablet)
-        {
-            height: 38px;
-            -webkit-line-clamp: 2;
-        }
-    }
+		@include mq($tablet)
+		{
+			height: 38px;
+			-webkit-line-clamp: 2;
+		}
+	}
 
-    .books__link-author
-    {
-        display: block;
-        margin: 0 0 8px 0;
+	.books__link-author
+	{
+		display: block;
+		margin: 0 0 8px 0;
 
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        letter-spacing: -0.1px;
-        color: $ocean-blue-color-80;
-    }
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: -0.1px;
+		color: $ocean-blue-color-80;
+	}
 
-    .books__prise-section
-    {
-        margin: 0;
+	.books__prise-section
+	{
+		margin: 0;
 
-        @include mq($tablet) { margin: 0 0 5px 0; }
+		@include mq($tablet) { margin: 0 0 5px 0; }
 
-        .books__link-price
-        {
-            margin: 8px 0 0 0;
+		.books__link-price
+		{
+			margin: 8px 0 0 0;
 
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 20px;
-            color: $ocean-blue-color;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 20px;
+			color: $ocean-blue-color;
 
-            &--red
-            {
-                color: #FD3A3A;
-            }
+			&--red
+			{
+				color: #FD3A3A;
+			}
 
-            &--old
-            {
-                position: relative;
+			&--old
+			{
+				position: relative;
 
-                margin: 0 0 0 5px;
+				margin: 0 0 0 5px;
 
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 15px;
-                color: $ocean-blue-color-50;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 15px;
+				color: $ocean-blue-color-50;
 
-                &::before
-                {
-                    content: '';
+				&::before
+				{
+					content: '';
 
-                    position: absolute;
-                    top: 7px;
-                    left: 0;
-                    width: 100%;
-                    height: 1px;
-                    border-bottom: 1px solid #FF0000;
-                    transform: rotate(-4deg);
+					position: absolute;
+					top: 7px;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					border-bottom: 1px solid #FF0000;
+					transform: rotate(-4deg);
 
-                    pointer-events: none;
-                }
-            }
+					pointer-events: none;
+				}
+			}
 
-            &--profit
-            {
-                margin: 0 0 0 3px;
+			&--profit
+			{
+				margin: 0 0 0 3px;
 
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 14px;
-                color: #0DB98C;
-            }
-        }
+				font-style: normal;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 14px;
+				color: #0DB98C;
+			}
+		}
 
-    }
+	}
 
-    .books__rating
-    {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        justify-content: space-between;
-        margin: 0 0 8px 0;
-        max-width: 206px;
-        width: 100%;
+	.books__rating
+	{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		justify-content: space-between;
+		margin: 0 0 8px 0;
+		max-width: 206px;
+		width: 100%;
 
-        @include mq($tablet)
-        {
-            flex-wrap: nowrap;
-            margin: 0 0 12px 0;
-        }
+		@include mq($tablet)
+		{
+			flex-wrap: nowrap;
+			margin: 0 0 12px 0;
+		}
 
-        .books__link-rating
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            height: 25px;
-            width: 52px;
-            border-radius: 5px;
-            background: rgba(255, 163, 77, 0.15);
+		.books__link-rating
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0;
+			height: 25px;
+			width: 52px;
+			border-radius: 5px;
+			background: rgba(255, 163, 77, 0.15);
 
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 12px;
-            color: rgb(255, 163, 77);
+			font-style: normal;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 12px;
+			color: rgb(255, 163, 77);
 
-            span { margin: 2px 0 0 4px;}
-        }
+			span { margin: 2px 0 0 4px;}
+		}
 
-        .books__link-rec
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            max-width: 144px;
-            height: 25px;
-            border-radius: 5px;
-            background: rgba(121, 134, 203, 0.15);
+		.books__link-rec
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			max-width: 144px;
+			height: 25px;
+			border-radius: 5px;
+			background: rgba(121, 134, 203, 0.15);
 
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 12px;
-            color: rgb(121, 134, 203);
+			font-style: normal;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 12px;
+			color: rgb(121, 134, 203);
 
-            @include mq($tablet) { margin: 0; }
+			@include mq($tablet) { margin: 0; }
 
-            span { margin:  2px 0 0 4px; }
-        }
-    }
+			span { margin:  2px 0 0 4px; }
+		}
+	}
 
-    .books__form
-    {
-        display: flex;
+	.books__form
+	{
+		display: flex;
 
-        .books__busket-btn
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
+		.books__busket-btn
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
 
-            width: 100%;
-            max-width: 146px;
-            height: 35px;
-            border: 1px solid #EEEEEE;
-            border-radius: 5px;
+			width: 100%;
+			max-width: 146px;
+			height: 35px;
+			border: 1px solid #EEEEEE;
+			border-radius: 5px;
 
-            @include mq($tablet) { height: 40px; }
+			@include mq($tablet) { height: 40px; }
 
-            span
-            {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 15px;
-                color: $ocean-blue-color;
-            }
-        }
+			span
+			{
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 15px;
+				color: $ocean-blue-color;
+			}
+		}
 
-        .books__posponed-btn
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 0 0 10px;
-            width: 40px;
-            height: 35px;
-            border: 1px solid #EEEEEE;
-            border-radius: 5px;
+		.books__posponed-btn
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 0 0 10px;
+			width: 40px;
+			height: 35px;
+			border: 1px solid #EEEEEE;
+			border-radius: 5px;
 
-            @include mq($tablet) { height: 40px; }
-        }
-    }
+			@include mq($tablet) { height: 40px; }
+		}
+	}
 }
-
