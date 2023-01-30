@@ -6,154 +6,154 @@
 	background: #FFFFFF;
 	border-radius: 5px;
 
-	// @include mq($tablet) { padding:22px 20px 26px 20px; }
+// @include mq($tablet) { padding:22px 20px 26px 20px; }
 
-	.book__title
-	{
-		display: block;
-		margin: 0 0 23px 0;
-
-		h3
-		{
-			margin: 0;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 20px;
-			color: $ocean-blue-color;
-		}
-	}
-
-	.book__time
-	{
-		position: absolute;
-		top: 20px;
-		right: 20px;
-
-		padding: 5px 10px;
-		border-radius: 5px;
-
-		background: rgba(255, 122, 0, 0.15);
-
-		font-style: normal;
-		font-weight: 500;
-		font-size: 12px;
-		line-height: 15px;
-		color: #FF7A00;
-	}
-
+@include mq($tablet)
+{
 	.book__image
 	{
-		display: flex;
-		margin: 0 auto;
-		width: 133px;
-		height: 200px;
-		border-radius: 5px;
-		overflow: hidden;
-	}
-
-	.book__img
-	{
-		display: flex;
-		margin: 0 auto;
-	}
-
-	.book__chapter
-	{
-		margin: 15px 0 0 0;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 15px;
-		color: $ocean-blue-color-50;
-	}
-
-	.book__name
-	{
-		display: block;
-		margin: 6px 0 0 0;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 19px;
-		color: $ocean-blue-color;
-	}
-
-	.book__author
-	{
-		margin: 10px 0 0 0;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 15px;
-		letter-spacing: -0.1px;
-		color: $ocean-blue-color;
-	}
-
-	.book__price
-	{
-		margin: 9px 0 0 0;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 20px;
-		color: $ocean-blue-color;
+		width: 167px;
+		height: 250px;
+		border-radius: 0;
 	}
 
 	.book__form
 	{
-		display: flex;
-		margin: 11px 0 0 0;
-
 		.book__busket-btn
 		{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 265px;
-			height: 40px;
-			border: 1px solid #EEEEEE;
-			border-radius: 5px;
-
-			span
-			{
-				padding: 0 0 0 11px;
-				font-style: normal;
-				font-weight: 500;
-				font-size: 14px;
-				line-height: 15px;
-				color: $ocean-blue-color;
-			}
+			width: 146px;
 		}
+	}
+}
+}
 
-		.book__posponed-btn
+.book__title
+{
+	display: block;
+	margin: 0 0 23px 0;
+
+	h3
+	{
+		margin: 0;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: $ocean-blue-color;
+	}
+}
+
+.book__time
+{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	padding: 5px 10px;
+	border-radius: 5px;
+
+	background: rgba(255, 122, 0, 0.15);
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FF7A00;
+}
+
+.book__image
+{
+	display: flex;
+	margin: 0 auto;
+	width: 133px;
+	height: 200px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.book__img
+{
+	display: flex;
+	margin: 0 auto;
+}
+
+.book__chapter
+{
+	margin: 15px 0 0 0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: $ocean-blue-color-50;
+}
+
+.book__name
+{
+	display: block;
+	margin: 6px 0 0 0;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19px;
+	color: $ocean-blue-color;
+}
+
+.book__author
+{
+	margin: 10px 0 0 0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: -0.1px;
+	color: $ocean-blue-color;
+}
+
+.book__price
+{
+	margin: 9px 0 0 0;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	color: $ocean-blue-color;
+}
+
+.book__form
+{
+	display: flex;
+	margin: 11px 0 0 0;
+
+	.book__busket-btn
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 265px;
+		height: 40px;
+		border: 1px solid #EEEEEE;
+		border-radius: 5px;
+
+		span
 		{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin: 0 0 0 10px;
-			width: 40px;
-			height: 40px;
-			border: 1px solid #EEEEEE;
-			border-radius: 5px;
+			padding: 0 0 0 11px;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 15px;
+			color: $ocean-blue-color;
 		}
 	}
 
-	@include mq($tablet)
+	.book__posponed-btn
 	{
-		.book__image
-		{
-			width: 167px;
-			height: 250px;
-			border-radius: 0;
-		}
-
-		.book__form
-		{
-			.book__busket-btn
-			{
-				width: 146px;
-			}
-		}
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 0 0 10px;
+		width: 40px;
+		height: 40px;
+		border: 1px solid #EEEEEE;
+		border-radius: 5px;
 	}
 }

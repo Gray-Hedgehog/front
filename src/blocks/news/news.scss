@@ -7,83 +7,81 @@
 	height: 100%;
 
 	@include mq($tablet) { padding: 25px 32px; }
+}
 
-	.news__link-image
+.news__link-image
+{
+	display: block;
+	margin: 0 auto 15px auto;
+
+	.news__image
 	{
-		display: block;
-		margin: 0 auto 15px auto;
-
-		// @include mq($tablet) { margin: 0; }
-
-		.news__image
-		{
-			max-width: 325px;
-			width: 100%;
-			height: 100%;
-			border-radius: 5px;
-
-			@include mq($tablet) { max-width: 310px; }
-		}
-	}
-
-	.news__date
-	{
-		margin: 0 0 5px 0;
-
-		font-style: normal;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 15px;
-		color: $ocean-blue-color-50;
-	}
-
-	.news__theme
-	{
-		margin: 0 0 8px 0;
-
-		h3
-		{
-			margin: 0;
-
-			font-style: normal;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 20px;
-			color: $ocean-blue-color;
-		}
-	}
-
-	.news__text
-	{
-		margin: 0 0 12px 0;
-
-		font-style: normal;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 20px;
-		color: $ocean-blue-color-80;
-	}
-
-	.news__btn
-	{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
+		max-width: 325px;
 		width: 100%;
-		height: 40px;
-		padding: 0 5px;
-
-		background: #FFFFFF;
-		border: 1px solid rgba(28, 41, 77, 0.15);
+		height: 100%;
 		border-radius: 5px;
+
+		@include mq($tablet) { max-width: 310px; }
+	}
+}
+
+.news__date
+{
+	margin: 0 0 5px 0;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: $ocean-blue-color-50;
+}
+
+.news__theme
+{
+	margin: 0 0 8px 0;
+
+	h3
+	{
+		margin: 0;
 
 		font-style: normal;
 		font-weight: 500;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 20px;
 		color: $ocean-blue-color;
-
-		@include mq($tablet) { max-width: 180px; }
 	}
+}
+
+.news__text
+{
+	margin: 0 0 12px 0;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: $ocean-blue-color-80;
+}
+
+.news__btn
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 40px;
+	padding: 0 5px;
+
+	background: #FFFFFF;
+	border: 1px solid rgba(28, 41, 77, 0.15);
+	border-radius: 5px;
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: $ocean-blue-color;
+
+	@include mq($tablet) { max-width: 180px; }
 }

@@ -18,120 +18,118 @@
 		gap: 30px;
 		margin: 30px 0 0 0;
 	}
+}
 
-	.services__item
+.services__item
+{
+	position: relative;
+	z-index: 90;
+
+	display: flex;
+
+	width: 100%;
+	padding: 52px 20px 50px 125px;
+
+	background: $white-color;
+	border-radius: 5px;
+
+
+	@include mq($tablet)
 	{
-		position: relative;
-		z-index: 90;
+		padding: 40px 18px 40px 88px;
+	}
 
-		display: flex;
+	.services__image
+	{
+		position: absolute;
+		z-index: -1;
 
 		width: 100%;
-		// max-width: 355px;
-		padding: 52px 20px 50px 125px;
+		height: auto;
 
-		background: $white-color;
-		border-radius: 5px;
-
-
-		@include mq($tablet)
+		&--clock
 		{
-			padding: 40px 18px 40px 88px;
-			// max-width: 263px;
+			top: 41px;
+			left: -9px;
+
+			max-width: 150px;
+
+			@include mq($tablet)
+			{
+				top: 36px;
+				left: -14px;
+				max-width: 120px;
+			}
 		}
 
-		.services__image
+		&--creditCard
 		{
-			position: absolute;
-			z-index: -1;
+			top: 40px;
+			left: 0px;
+			max-width: 140px;
 
-			width: 100%;
-			height: auto;
-
-			&--clock
-			{
-				top: 41px;
-				left: -9px;
-
-				max-width: 150px;
-
-				@include mq($tablet)
-				{
-					top: 36px;
-					left: -14px;
-					max-width: 120px;
-				}
-			}
-
-			&--creditCard
+			@include mq($tablet)
 			{
 				top: 40px;
-				left: 0px;
-				max-width: 140px;
-
-				@include mq($tablet)
-				{
-					top: 40px;
-					left: -3px;
-					max-width: 100px;
-				}
-			}
-
-			&--star
-			{
-				top: 40px;
-				left: 0px;
-				max-width: 135px;
-
-				@include mq($tablet)
-				{
-					top: 40px;
-					left: -1px;
-					max-width: 100px;
-				}
-			}
-
-			&--bag
-			{
-				top: 37px;
 				left: -3px;
-				max-width: 150px;
-
-				@include mq($tablet)
-				{
-					top: 28px;
-					left: -17px;
-					max-width: 135px;
-				}
+				max-width: 100px;
 			}
 		}
 
-		.services__main
+		&--star
 		{
-			display: flex;
-			flex-direction: column;
-			gap: 5px;
+			top: 40px;
+			left: 0px;
+			max-width: 135px;
 
-			.services__theme
+			@include mq($tablet)
 			{
-				white-space: nowrap;
-				font-style: normal;
-				font-weight: 700;
-				font-size: 16px;
-				line-height: 25px;
-				color: $ocean-blue-color;
+				top: 40px;
+				left: -1px;
+				max-width: 100px;
 			}
+		}
 
-			.services__text
+		&--bag
+		{
+			top: 37px;
+			left: -3px;
+			max-width: 150px;
+
+			@include mq($tablet)
 			{
-				display: block;
-
-				font-style: normal;
-				font-weight: 400;
-				font-size: 12px;
-				line-height: 19px;
-				color: #727272;
+				top: 28px;
+				left: -17px;
+				max-width: 135px;
 			}
+		}
+	}
+
+	.services__main
+	{
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+
+		.services__theme
+		{
+			white-space: nowrap;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 25px;
+			color: $ocean-blue-color;
+		}
+
+		.services__text
+		{
+			display: block;
+
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 19px;
+			color: #727272;
 		}
 	}
 }
