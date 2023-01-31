@@ -19,7 +19,7 @@
 .books__link-new
 {
 	position: absolute;
-	top: 18px;
+	top: 14px;
     left: 10px;
 	padding: 5px 10px;
 	height: 25px;
@@ -33,10 +33,10 @@
 	text-align: center;
 	color: #3DC47E;
 
-	@include ma($tablet)
+	@include mq($tablet)
 	{
-		top: 20px;
-		left: 20px;
+		top: 19px;
+		left: 31px;
 	}
 }
 
@@ -58,7 +58,7 @@
 	text-align: center;
 	color: #AC8EE3;
 
-	@include ma($tablet)
+	@include mq($tablet)
 	{
 		top: 20px;
 		left: 20px;
@@ -68,8 +68,8 @@
 .books__link-promotion
 {
 	position: absolute;
-	top: 53px;
-    left: 10px;
+	top: 50px;
+    left: 9px;
 	padding: 5px 10px;
 	height: 25px;
 
@@ -83,10 +83,10 @@
 	text-align: center;
 	color: #FF4F52;
 
-	@include ma($tablet)
+	@include mq($tablet)
 	{
 		top: 55px;
-		left: 20px;
+		left: 31px;;
 	}
 }
 
