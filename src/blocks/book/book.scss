@@ -41,30 +41,22 @@
 	color: #FF7A00;
 }
 
-.book__img-container
+
+.book__img
 {
 	display: flex;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 133px;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 42%;
 
 	@include mq($tablet)
 	{
-		max-width: 167px;
-	}
-	.book__img
-	{
-		display: flex;
 		width: 100%;
-		border-radius: 5px;
-		overflow: hidden;
-
-		@include mq($tablet)
-		{
-			border-radius: 0;
-		}
+		max-width: 167px;
+		border-radius: 0;
 	}
 }
+
 
 .book__chapter
 {
