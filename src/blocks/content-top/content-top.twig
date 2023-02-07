@@ -1,5 +1,7 @@
 <div class="content-top">
-	<div class="content-top__slider"></div>
+	<div class="content-top__slider">
+		{% include 'blocks/slider/slider.twig' %}
+	</div>
 	<div class="content-top__book">
 		{% include 'blocks/book/book.twig' with {
 			'bookTitle': 'Книга дня',
