@@ -1,26 +1,38 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+const images = document.querySelectorAll('.slider__container .slider-line img');
+const sliderLine = document.querySelector('.slider__container .slider-line');
+let count = 0;
+let width;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function init() {
+    console.log('resize');
+    width = document.querySelector('.slider').offsetWidth;
+    sliderLine.style.width = width * images.length + 'px';
+    images.forEach(item => {
+        item.style.width = width + 'px';
+        item.style.height = '73%';
+    });
+    rollSlider();
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+init();
+window.addEventListener('resize', init);
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("slider__dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+document.querySelector('.slider__btn-next').addEventListener('click', function () {
+    count++;
+    if (count >= images.length) {
+        count = 0;
+    }
+    rollSlider();
+});
+
+document.querySelector('.slider__btn-prev').addEventListener('click', function () {
+    count--;
+    if (count < 0) {
+        count = images.length - 1;
+    }
+    rollSlider();
+});
+
+function rollSlider() {
+    sliderLine.style.transform = 'translate(-' + count * width + 'px)';
 }
