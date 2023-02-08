@@ -1,5 +1,5 @@
-const slides = document.querySelectorAll('.slider__container .slider-line img');
-const sliderLine = document.querySelector('.slider__container .slider-line');
+const slides = document.querySelectorAll('.slider__container .slider__line img');
+const sliderLine = document.querySelector('.slider__container .slider__line');
 let dots = document.getElementsByClassName("slider__dot");
 let count = 0;
 let width;

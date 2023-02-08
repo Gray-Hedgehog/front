@@ -4,7 +4,7 @@
 	overflow: hidden;
 }
 
-.slider-line
+.slider__line
 {
 	display: flex;
 	width: 100%;
@@ -25,21 +25,23 @@
 	justify-content: center;
 	align-items: center;
 
-	cursor: pointer;
 	position: absolute;
 	top: 51%;
 	left: 4%;
-	width: 40px;
-	height: 40px;
+
 	padding: 16px;
 	margin-top: -22px;
+	width: 40px;
+	height: 40px;
+
+	background: #AAF0D1D9;
 	color: #1C294D;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
 	border-radius: 5px;
 	user-select: none;
-	background: #AAF0D1D9;
+	cursor: pointer;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -48,20 +50,22 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	cursor: pointer;
+
 	position: absolute;
 	top: 51%;
 	right: 4%;
 	width: 40px;
 	height: 40px;
 	margin-top: -22px;
+
+	background: #AAF0D1D9;
 	color: #1C294D;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
 	border-radius: 5px;
 	user-select: none;
-	background: #AAF0D1D9;
+	cursor: pointer;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -80,14 +84,15 @@
 
 .slider__dot
 {
-	cursor: pointer;
+	display: inline-block;
+	margin: 0 1px;
 	height: 2px;
 	width: 25px;
-	margin: 0 2px;
-	background-color:  #AAF0D1D9;
 	border-radius: 2px;
-	display: inline-block;
+	background-color:  #AAF0D1D9;
+
 	transition: background-color 0.6s ease;
+	cursor: pointer;
 }
 
 .active, .slider__dot:hover {
