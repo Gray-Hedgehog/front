@@ -10,7 +10,6 @@ function init() {
 	sliderLine.style.width = width * slides.length + 'px';
 	slides.forEach(item => {
 		item.style.width = width + 'px';
-		// item.style.height = auto;
 	});
 	rollSlider();
 }
@@ -23,6 +22,7 @@ document.querySelector('.slider__btn-next').addEventListener('click', function (
 	if (count >= slides.length) {
 		count = 0;
 	}
+	dotSlider(count);
 	rollSlider();
 });
 
@@ -31,6 +31,7 @@ document.querySelector('.slider__btn-prev').addEventListener('click', function (
 	if (count < 0) {
 		count = slides.length - 1;
 	}
+	dotSlider(count);
 	rollSlider();
 });
 
@@ -41,12 +42,15 @@ function rollSlider() {
 
 function showSlides(n) {
 	count = n;
-
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
-		console.log("dot" + i );
-	}
-	dots[count].className += " active";
-
+	dotSlider(count);
 	rollSlider();
+}
+
+
+function dotSlider(count) {
+	for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			console.log("dot" + i );
+		}
+	dots[count].className += " active";
 }

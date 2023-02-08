@@ -13,7 +13,7 @@
 	{
 		margin: 30px 0 0 0;
 		grid-template-columns: 1fr 1fr 1fr ;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 350px auto;
 		grid-template-areas: "slider slider book"
 							 "card  card  book" ;
 		grid-gap: 30px;
@@ -34,6 +34,8 @@
 		@include mq($tablet) {}
 
 		background: #CCFF90;
+
+		transform: translateY(4px);
 	}
 
 	.content-top__book { grid-area: book; }
