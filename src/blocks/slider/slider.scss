@@ -1,36 +1,24 @@
-// .slider {
-// 	position: relative;
-// 	max-width: 1000px;
-// 	height: 100%;
-// 	position: relative;
-// 	margin: auto;
-// }
-
 .slider__container
 {
 	position: relative;
-	border: 2px solid black;
-	width: 100%;
-	// max-width: 80%;
-	height: 100%;
-	// margin: 20px auto;
 	overflow: hidden;
 }
 
 .slider-line
 {
+	display: flex;
 	width: 100%;
 	height: 100%;
-	display: flex;
-	background: orange;
-	// position: relative;
 	left: 0;
 	transition: all ease 1s;
 }
 
+.slider__image
+{
+	min-height: 175px;
+	height: 100%;
+}
 
-
-/* slider__btn-next & slider__btn-previous buttons */
 .slider__btn-prev
 {
 	display: flex;
@@ -51,14 +39,15 @@
 	transition: 0.6s ease;
 	border-radius: 5px;
 	user-select: none;
-	background: #FFFFFFD9;
+	background: #AAF0D1D9;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .slider__btn-next {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	cursor: pointer;
 	position: absolute;
 	top: 51%;
@@ -72,34 +61,36 @@
 	transition: 0.6s ease;
 	border-radius: 5px;
 	user-select: none;
-	background: #FFFFFFD9;
+	background: #AAF0D1D9;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .slider__btn-prev:hover, .slider__btn-next:hover {
-	background-color: #FFFFFF;
+	background-color: #AAF0D1F5;
 }
 
 .slider__dots
 {
 	position: absolute;
-	text-align: center;
 	bottom: 4%;
-	// position: sticky;
+	width: 100%;
+	text-align: center;
 }
 
-/* The dots/bullets/indicators */
-.slider__dot {
+.slider__dot
+{
 	cursor: pointer;
 	height: 2px;
 	width: 25px;
 	margin: 0 2px;
-	background-color:  #FFFFFF80;
+	background-color:  #AAF0D1D9;
 	border-radius: 2px;
 	display: inline-block;
 	transition: background-color 0.6s ease;
 }
 
 .active, .slider__dot:hover {
-	background-color: #FFFFFF;
+	background-color: green;
+	// background-color: black;
 }
