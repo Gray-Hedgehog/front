@@ -18,6 +18,7 @@ const o2 =
 	init()
 	{
 		this.initSlider();
+		this.slider.init();
 	},
 	/**
 	* отслеживание клика вне блока
