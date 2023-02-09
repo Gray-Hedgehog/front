@@ -1,4 +1,4 @@
-const slides = document.querySelectorAll('.slider__container .slider__line img');
+const slider = document.querySelectorAll('.slider__container .slider__line img');
 const sliderLine = document.querySelector('.slider__container .slider__line');
 let dots = document.getElementsByClassName("slider__dot");
 let count = 0;
@@ -7,8 +7,8 @@ let width;
 function init() {
 	console.log('resize');
 	width = document.querySelector('.slider__container').offsetWidth;
-	sliderLine.style.width = width * slides.length + 'px';
-	slides.forEach(item => {
+	sliderLine.style.width = width * slider.length + 'px';
+	slider.forEach(item => {
 		item.style.width = width + 'px';
 	});
 	rollSlider();
@@ -17,30 +17,30 @@ function init() {
 init();
 window.addEventListener('resize', init);
 
-document.querySelector('.slider__btn-next').addEventListener('click', function () {
+function  sliderNext() {
 	count++;
-	if (count >= slides.length) {
+	if (count >= slider.length) {
 		count = 0;
 	}
 	dotSlider(count);
 	rollSlider();
-});
+}
 
-document.querySelector('.slider__btn-prev').addEventListener('click', function () {
+function sliderPrev() {
 	count--;
 	if (count < 0) {
-		count = slides.length - 1;
+		count = slider.length - 1;
 	}
 	dotSlider(count);
 	rollSlider();
-});
+}
 
 function rollSlider() {
 	sliderLine.style.transform = 'translate(-' + count * width + 'px)';
 }
 
 
-function showSlides(n) {
+function showslider(n) {
 	count = n;
 	dotSlider(count);
 	rollSlider();
