@@ -1,0 +1,47 @@
+.buttons
+{
+	position: absolute;
+	top: 15px;
+	right: 8px;
+	display: flex;
+	width: 61px;
+	height: 30px;
+	border: 1px solid rgba(28, 41, 77, 0.15);
+	border-radius: 5px;
+
+	@include mq($tablet)
+	{
+		top: 15px;
+		right: 25px;
+	}
+
+	.buttons__prev-arrow
+	{
+		position: relative;
+		width:30px;
+		height:29px;
+		background: blue;
+		border-radius: 5px 0 0 5px;
+		left: 0;
+
+		&::after
+		{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 28px;
+			border-right: 1px solid rgba(28, 41, 77, 0.15);
+		}
+	}
+
+	.buttons__next-arrow
+	{
+		position: absolute;
+		width:30px;
+		height:29px;
+		background: green;
+		border-radius: 0 5px 5px 0;
+		right: 0;
+	}
+}

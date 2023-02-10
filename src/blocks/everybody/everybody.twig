@@ -1,17 +1,13 @@
 <div class="everybody">
 	<a class="everybody__theme" href="#">{{theme}}</a>
 
-	<div class="everybody__buttons">
-		<div class="everybody__prev-arrow "></div>
-		<div class="everybody__next-arrow"></div>
-		<!-- <div class="g-navigation specialists-detail__navigation">
-    		<div class="g-navigation__paginate _g-specialists-detail-arrow"></div>
-   		</div> -->
-	</div>
-
-
 	<div class="everybody__body">
-		<div class="g-slider" data-slick='{ "prevArrow": ".everybody__prev-arrow", "nextArrow": ".everybody__next-arrow"}'>
+		<div class="everybody__buttons _books-slider-buttons">
+			<div class="everybody__prev-arrow _{{ type }}-slider-btn-prev">{% include 'assets/svg/arrowLeft.svg' %}</div>
+			<div class="everybody__next-arrow _{{ type }}-slider-btn-next">{% include 'assets/svg/arrowRight.svg' %}</div>
+		</div>
+
+		<div class="g-slider" data-slick='{ "prevArrow": "._{{ type }}-slider-btn-prev", "nextArrow": "._{{ type }}-slider-btn-next"}'>
 			{% for i in 0..5 %}
 				<div class="g-slider__item-wr">
 					{% include 'blocks/books/books.twig' with {
@@ -19,8 +15,7 @@
 						'textName': 'Инвестирование: способы, риски, субъекты : монография',
 						'textAuthor': 'Майфат А.В.',
 						'textPrice': '4 450 ₽ ',
-						'textPriceOld': '1 284 ₽',
-						'textPriceProfit': 'Выгода 300 ₽'
+						'textPriceOld': '1 284 ₽'
 					}
 					%}
 				</div>

@@ -42,19 +42,24 @@
 
 	.everybody__prev-arrow
 	{
-		position: relative;
-		width:30px;
-		height:29px;
-		background: blue;
-		border-radius: 5px 0 0 5px;
+		position: absolute;
 		left: 0;
+
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+
+		width:28px;
+		height:28px;
+		background: inherit;
+		border-radius: 5px 0 0 5px;
 
 		&::after
 		{
 			content: '';
 			position: absolute;
 			top: 0;
-			right: 0;
+			right: -2px;
 			height: 28px;
 			border-right: 1px solid rgba(28, 41, 77, 0.15);
 		}
@@ -63,11 +68,16 @@
 	.everybody__next-arrow
 	{
 		position: absolute;
-		width:30px;
-		height:29px;
-		background: green;
-		border-radius: 0 5px 5px 0;
 		right: 0;
+
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+
+		width:28px;
+		height: 28px;
+		background: inherit;
+		border-radius: 0 5px 5px 0;
 	}
 }
 
