@@ -1,35 +1,33 @@
 <div class="everybody">
 	<a class="everybody__theme" href="#">{{theme}}</a>
 
-	<form class="everybody__form" action="#">
-		<button class="everybody__btn everybody__btn--left">
-			{% include 'assets/svg/arrowLeft.svg' %}
-		</button>
-		<div class="everybody__form-line"></div>
-		<button class="everybody__btn everybody__btn--right">
-			{% include 'assets/svg/arrowRight.svg' %}
-		</button>
-	</form>
-
-
-<!-- <div class="g-slider">
-	{% for i in 0..5 %}
-	<div class="g-slider__item-wr">
-		<div class="everybody__item">
-			{% include 'blocks/books/books.twig' with {
-				'textTheme': 'Корпоративное право',
-				'textName': 'Инвестирование: способы, риски, субъекты : монография',
-				'textAuthor': 'Майфат А.В.',
-				'textPrice': '4 450 ₽ ',
-			}
-			%}
-		</div>
+	<div class="everybody__buttons">
+		<div class="everybody__prev-arrow "></div>
+		<div class="everybody__next-arrow"></div>
+		<!-- <div class="g-navigation specialists-detail__navigation">
+    		<div class="g-navigation__paginate _g-specialists-detail-arrow"></div>
+   		</div> -->
 	</div>
-	{% endfor %}
-</div> -->
+
 
 	<div class="everybody__body">
-		<div class="everybody__item">
+		<div class="g-slider" data-slick='{ "prevArrow": ".everybody__prev-arrow", "nextArrow": ".everybody__next-arrow"}'>
+			{% for i in 0..5 %}
+				<div class="g-slider__item-wr">
+					{% include 'blocks/books/books.twig' with {
+						'textTheme': 'Корпоративное право',
+						'textName': 'Инвестирование: способы, риски, субъекты : монография',
+						'textAuthor': 'Майфат А.В.',
+						'textPrice': '4 450 ₽ ',
+						'textPriceOld': '1 284 ₽',
+						'textPriceProfit': 'Выгода 300 ₽'
+					}
+					%}
+				</div>
+			{% endfor %}
+		</div>
+
+		<!-- <div class="everybody__item">
 			{% include 'blocks/books/books.twig' with {
 				'textTheme': 'Корпоративное право',
 				'textName': 'Инвестирование: способы, риски, субъекты : монография',
@@ -66,7 +64,7 @@
 				'textPrice': '450 ₽ ',
 			}
 			%}
-		</div>
+		</div> -->
 	</div>
 
 	<a class="everybody__show" href="#">{{show}}</a>

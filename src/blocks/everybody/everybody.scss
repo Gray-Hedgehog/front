@@ -5,6 +5,7 @@
 	margin: 10px 0 0 0;
 	padding: 18px 0 10px 0;
 	border-radius: 5px;
+	overflow:hidden;
 
 	@include mq($tablet) { margin: 30px 0 0 0; }
 
@@ -22,7 +23,7 @@
 	}
 }
 
-.everybody__form
+.everybody__buttons
 {
 	position: absolute;
 	top: 15px;
@@ -39,19 +40,34 @@
 		right: 25px;
 	}
 
-	.everybody__btn
+	.everybody__prev-arrow
 	{
-		display: flex;
-		padding: 9px;
-		border: none;
+		position: relative;
+		width:30px;
+		height:29px;
+		background: blue;
+		border-radius: 5px 0 0 5px;
+		left: 0;
+
+		&::after
+		{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 28px;
+			border-right: 1px solid rgba(28, 41, 77, 0.15);
+		}
 	}
 
-	.everybody__form-line
+	.everybody__next-arrow
 	{
-		width: 1px;
-		height: 30px;
-		background: rgba(28, 41, 77, 0.15);
-		transform: translateY(-1px);
+		position: absolute;
+		width:30px;
+		height:29px;
+		background: green;
+		border-radius: 0 5px 5px 0;
+		right: 0;
 	}
 }
 

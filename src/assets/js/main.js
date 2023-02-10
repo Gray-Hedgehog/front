@@ -19,6 +19,7 @@ const o2 =
 	{
 		this.initSlider();
 		this.slider.init();
+		// this.initEverybody();
 	},
 	/**
 	* отслеживание клика вне блока

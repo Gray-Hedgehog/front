@@ -1,5 +1,9 @@
 @import './vendors/slick';
-.g-slider{margin-right: -35px; width:1200px;}
+.g-slider
+{
+	margin-right: -35px;
+	width:1200px;
+}
 .g-slider__item
 {
 	width: 25%;
@@ -12,7 +16,7 @@
 .slick-arrow
 {
 	position: absolute;
-	top: 81px;
+	// top: 81px;
 	display: block;
 	z-index: 2;
 }
