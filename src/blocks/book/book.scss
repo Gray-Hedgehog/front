@@ -113,7 +113,7 @@
 		border: 1px solid #EEEEEE;
 		border-radius: 5px;
 
-		@include mq($tablet) { width: 164px; }
+		@include mq($tablet) { width: 146px; }
 
 		span
 		{
