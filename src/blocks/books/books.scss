@@ -226,12 +226,14 @@
 	flex-wrap: wrap;
 	gap: 8px;
 	justify-content: space-between;
+	flex-direction: column;
 	margin: 0 0 11px 0;
 	max-width: 206px;
 	width: 100%;
 
 	@include mq($tablet)
 	{
+		flex-direction: row;
 		flex-wrap: nowrap;
 		margin: 0 0 12px 0;
 	}
