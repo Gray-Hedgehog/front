@@ -19,6 +19,7 @@ const o2 =
 	{
 		this.initSlider();
 		this.slider.init();
+		this.gPopup.open();
 	},
 	/**
 	* отслеживание клика вне блока

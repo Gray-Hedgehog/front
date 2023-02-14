@@ -1,6 +1,6 @@
 .header__wrapper
 {
-	position: relative;
+	// position: relative;
 	width: 100%;
 	background-color: white;
 	padding: 0;
@@ -39,6 +39,7 @@
 
 .header__information
 {
+	position: relative;
 	display: flex;
 	flex: 0 0 auto;
 

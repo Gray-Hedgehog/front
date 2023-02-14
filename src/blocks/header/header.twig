@@ -2,8 +2,9 @@
 	<div class="header__wrapper">
 		<div class="container">
 			<div class="header__top">
+			{% include 'blocks/header-popup/header-popup.twig' %}
 				<div class="header__information">
-					<a class="header__information-link" href="#">
+					<a class="header__information-link" onclick="o2.gPopup.open('_header-popup')">
 						{% include 'assets/svg/location.svg' %}
 						<span>Москва</span>
 					</a>
@@ -81,4 +82,5 @@
 			</div>
 		</div>
 	</div>
+	{% include 'blocks/g-popup/g-popup.twig' %}
 </header>

@@ -23,8 +23,23 @@
 			<div class="header__wrapper">
 				<div class="container">
 					<div class="header__top">
+						<div class="_header-popup" style='display: none;'>
+							<div class="header-popup _popup-content">
+								<span onclick="o2.gPopup.close()"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.2559 3.92259C17.5814 3.59715 17.5814 3.06951 17.2559 2.74408C16.9305 2.41864 16.4028 2.41864 16.0774 2.74408L10 8.82149L3.92259 2.74408C3.59715 2.41864 3.06952 2.41864 2.74408 2.74408C2.41864 3.06951 2.41864 3.59715 2.74408 3.92259L8.82149 10L2.74408 16.0774C2.41864 16.4028 2.41864 16.9305 2.74408 17.2559C3.06951 17.5814 3.59715 17.5814 3.92259 17.2559L10 11.1785L16.0774 17.2559C16.4028 17.5814 16.9305 17.5814 17.2559 17.2559C17.5814 16.9305 17.5814 16.4028 17.2559 16.0774L11.1785 10L17.2559 3.92259Z" fill="#1C294D" />
+									</svg>
+								</span>
+								<ul>
+									<li>Lorem ipsum dolor sit amet.</li>
+									<li>Lorem ipsum, dolor sit amet.</li>
+									<li>Lorem ipsum dolor sit amet.</li>
+									<li>Lorem ipsum dolor sit amet.</li>
+									<li>Lorem ipsum dolor sit amet.</li>
+								</ul>
+							</div>
+						</div>
 						<div class="header__information">
-							<a class="header__information-link" href="#">
+							<a class="header__information-link" onclick="o2.gPopup.open('_header-popup')">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5843 9.87971L9.99996 15.7921L6.41557 9.87971C4.67704 7.01205 6.69699 3.30942 9.99996 3.30942C13.3029 3.30942 15.3229 7.01205 13.5843 9.87971ZM5.04793 10.7442C2.64606 6.78238 5.43673 1.66699 9.99996 1.66699C14.5632 1.66699 17.3539 6.78238 14.952 10.7442L10.5355 18.029C10.2893 18.4352 9.71064 18.4352 9.46439 18.029L5.04793 10.7442ZM10.0001 5.77305C9.11178 5.77305 8.39164 6.50839 8.39164 7.41547C8.39164 8.32256 9.11178 9.0579 10.0001 9.0579C10.8885 9.0579 11.6086 8.32256 11.6086 7.41547C11.6086 6.50839 10.8885 5.77305 10.0001 5.77305Z" fill="#1C294D" fill-opacity="0.5"/>
 </svg>
@@ -139,6 +154,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="g-popup _overlay"></div>
 		</header>
 		<div class="container">
 
