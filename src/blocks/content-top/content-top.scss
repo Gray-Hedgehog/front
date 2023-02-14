@@ -3,16 +3,16 @@
 	display: grid;
 	margin: 10px 0 0 0;
 	grid-template-areas: "slider"
-						 "book"
-						 "card"
-						 "card";
+	"book"
+	"card"
+	"card";
 	grid-gap: 10px;
 
 	@include mq($tablet)
 	{
 		margin: 30px 0 0 0;
 		grid-template-areas: "slider slider book"
-							 "card  card  book" ;
+		"card  card  book" ;
 		grid-gap: 30px;
 	}
 
@@ -22,8 +22,10 @@
 		position: relative;
 		grid-area: slider;
 
+		max-width: 750px;
 		width: 100%;
 		height: auto;
+		max-height: 350px;
 		// aspect-ratio: 1/0.4;
 		min-width: 355px;
 		min-height: 175px;
