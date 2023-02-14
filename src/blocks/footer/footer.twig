@@ -1,5 +1,3 @@
-{# index.twig #}
-
 {% block footer %}
 	<footer>
 		<div class="footer__wrapper">
@@ -10,7 +8,7 @@
 							{% include 'assets/svg/logo.svg' %}
 						</div>
 
-						<form class="footer__form" action="#">
+						<form class="footer__search-form" action="#">
 							<input class="footer__search" id="footerSearch" type="text" placeholder="Введите свой Email и получите скидку">
 							<label for="footerSearch"></label>
 							<button class="footer__search-btn">
@@ -51,18 +49,16 @@
 		</div>
 
 		<div class="container">
-			<div class="footer__middle">
+			<div class="footer__middle-items">
 
-				<ul class="footer__buyers">
+				<ul class="footer__middle-item">
 					<li class="footer__title"> <a class="footer__title-link" href="#">Покупателям</a> </li>
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Наша почта</a> </li>
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Оплата и доставка</a> </li>
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Вопросы и ответы</a> </li>
 				</ul>
 
-				<div class="footer__line"></div>
-
-				<ul class="footer__publishing">
+				<ul class="footer__middle-item">
 					<li class="footer__title"> <a class="footer__title-link" href="#">Издательство</a> </li>
 					<li class="footer__link--margin"> <a class="footer__link" href="#">О компании</a> </li>
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Авторам</a> </li>
@@ -70,9 +66,7 @@
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Контакты</a> </li>
 				</ul>
 
-				<div class="footer__line"></div>
-
-				<ul class="footer__books">
+				<ul class="footer__middle-item">
 					<li class="footer__title"> <a class="footer__title-link" href="#">Книги</a> </li>
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Все категории</a> </li>
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Бестселлеры</a> </li>
@@ -80,9 +74,7 @@
 					<li class="footer__link--margin"> <a class="footer__link" href="#">Скидки и акции</a> </li>
 				</ul>
 
-				<div class="footer__line"></div>
-
-				<ul class="footer__price-list">
+				<ul class="footer__middle-item">
 					<li class="footer__title"> <a class="footer__title-link" href="#">Прайс-лист</a> </li>
 					<li>
 						<a class="footer__link footer__link--download"  href="#" download>
@@ -98,7 +90,7 @@
 				<ul class="footer__contacts">
 					<li class="footer__title"> <a class="footer__title-link" href="#">Телефон и Email</a> </li>
 					<li>
-						<a class="footer__email" href="#">
+						<a class="footer__email" href="mailto:market@estatut.ru">
 							{% include 'assets/svg/email.svg' %}
 							<span>market@estatut.ru</span>
 						</a>
