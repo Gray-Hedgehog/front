@@ -1,12 +1,56 @@
 <div class="_header-popup" style='display: none;'>
-	<div class="header-popup _popup-content">
-		<span onclick="o2.gPopup.close()">{% include 'assets/svg/close.svg' %}</span>
-		<ul>
-			<li>Lorem ipsum dolor sit amet.</li>
-			<li>Lorem ipsum, dolor sit amet.</li>
-			<li>Lorem ipsum dolor sit amet.</li>
-			<li>Lorem ipsum dolor sit amet.</li>
-			<li>Lorem ipsum dolor sit amet.</li>
-		</ul>
+	<div class="_popup-content">
+		<div class="header-popup">
+			<span class="header-popup__close" onclick="o2.gPopup.close()">{% include 'assets/svg/close.svg' %}</span>
+			<div class="header-popup__head">
+				<span class="header-popup__title">
+					{% include 'assets/svg/location.svg' %}
+					Ваш населённый пункт
+				</span>
+
+				<form action="">
+					<div class="header-popup__form">
+						<label class="header-popup__label" for="headerPopupInput">Поиск населенного пункта</label>
+						<div class="header-popup__input-container">
+							<input class="header-popup__input" id="headerPopupInput" type="text" name="headerPopupInput" placeholder="Откуда вы?">
+							<button class="header-popup__button">{% include 'assets/svg/search3.svg' %}</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="header-popup__list">
+				<ul class="header-popup__ul">
+					<li class="header-popup__li">Москва</li>
+					<li class="header-popup__li header-popup__li--color">Санкт-Петербург</li>
+					<li class="header-popup__li">Новосибирск</li>
+					<li class="header-popup__li">Екатеринбург</li>
+					<li class="header-popup__li">Нижний Новгород</li>
+					<li class="header-popup__li">Казань</li>
+					<li class="header-popup__li">Челябинск</li>
+					<li class="header-popup__li">Омск</li>
+					<li class="header-popup__li">Самара</li>
+					<li class="header-popup__li">Ростов-на-Дону</li>
+					<li class="header-popup__li">Уфа</li>
+					<li class="header-popup__li">Саратов</li>
+					<li class="header-popup__li">Тверь</li>
+				</ul>
+				<ul class="header-popup__ul">
+					<li class="header-popup__li">Краснодар</li>
+					<li class="header-popup__li">Красноярск</li>
+					<li class="header-popup__li">Архангельск</li>
+					<li class="header-popup__li">Мурманск</li>
+					<li class="header-popup__li">Владивосток</li>
+					<li class="header-popup__li">Самара</li>
+					<li class="header-popup__li">Сочи</li>
+					<li class="header-popup__li">Пермь</li>
+					<li class="header-popup__li">Тольятти</li>
+					<li class="header-popup__li">Ижевск</li>
+					<li class="header-popup__li">Тула</li>
+					<li class="header-popup__li">Тюмень</li>
+					<li class="header-popup__li">Хабаровск</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </div>
