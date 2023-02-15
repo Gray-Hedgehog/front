@@ -77,6 +77,12 @@
 		{
 			padding: 0 0 0 6px;
 		}
+
+		svg
+		{
+			fill: #1C294D;
+			fill-opacity: 0.5;
+		}
 	}
 }
 
@@ -279,7 +285,11 @@
 			display: flex;
 			background: $dark-amber-color;
 
-			.svg__search { fill: #FFFFFF; }
+			.svg__search
+			{
+				fill: #FFFFFF;
+				fill-opacity: 1;
+			}
 		}
 
 		span
